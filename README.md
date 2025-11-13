@@ -18,7 +18,7 @@ Ronald Lommers
 
 #### Je startniveau:
 
-Zwarte Piste
+Rode Piste
 
 #### Je focus:
 
@@ -56,6 +56,62 @@ hier de naam van de pagina
 ### Bevindingen
 
 Lijst met je bevindingen die in de test naar voren kwamen:
+
+Screen Reader:
+
+Algemeen:
+De godot website maakt gebruik van verschillende kopjes
+De website maakt gebruik van verschillende headings (H1 t/m H4)
+
+Header:
+Geeft in de header eerst duidelijk aan dat het in de header is en vervolgens dat het een link is
+
+Begin:
+Geeft duidelijk H1 aan
+Geeft duidelijk alle links aan
+Geen alt tekst voor het achtergrond plaatje
+
+Latest News:
+Geen alt tekst bij de afbeeldingen
+Als een volledig blok geselecteerd word zegt het alleen "LINK" voor de rest niets
+
+Goed:
+Over het algemeen word en goed gebruik gemaakt van kopjes
+In de header word duidelijk aangegeven dat de gebruiker zich in de header bevind en vervolgens word aangegeven dat het een link is en wat er staat
+
+Slecht:
+Er word over het algemeen geen gebruik gemaakt van alt tekst voor afbeeldingen waardoor volledig visueel beperkte geen idee hebben wat de afbeelding is
+Bij news blokken word alleen het woord "LINK" gezegd voor de rest niets tenzij de rest apart word geselecteerd
+
+WCAG Test Summary:
+
+Goed:
+De website maakt gebruik van duidelijke taal
+Op de pagina's word er gebruik gemaakt van 1 H1
+Er word gebruik gemaakt van de Lang attribute in de html
+Er kan worden ingezoomd
+De website is duidelijk en gemakkelijk te navigeren met en keyboard
+De website kan horizontaal op mobiel en ipad worden bekeken
+Horizontaal scrollen is uitgeschakkeld
+Knoppen en link iconen zijn groot genoeg en goed gepositioneerd
+Er word gebruik gemaakt van heading elementen om de content te introduceren
+De heading elementen worden in een logische volgorde geschreven
+Er word geen heading level overgeslagen
+De decoratieve foto's bevatten geen alt tekst
+Het A elementen word gebruikt voor links
+Klikbare elementen hebben een focus state
+Hight contrast mode word ondersteund
+
+Slecht:
+De homepage heeft geen titel waardoor dat niet te lezen is door screen readers
+Bij het valideren van de HTML kwamen er 4 errors en 3 waarschuwingen aan het licht
+De ruimte tussen bepaalde interactieve elementen is te weinig
+Er word bijna overal gebruik gemaakt van DIV's in plaats van OL, UL of DL elementen
+Bij geen van de foto's op de website word alt tekst gebruikt
+Veel links zien eruit als knoppen
+Niet klikbare elementen hebben ook een focus state
+Er is geen skip link aanwezig in de website
+Er is geen Light mode
 
 </details>
 
