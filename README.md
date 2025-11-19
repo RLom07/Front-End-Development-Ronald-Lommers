@@ -38,13 +38,13 @@ https://godotengine.org/
 
 #### Screenshot(s) van de eerste pagina (small screen):
 
-hier de naam van de pagina  
- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Homepage
+<img src="readme-images/homepage.png" width="375px" alt="Op de homepagina word de Godot game engine kort geintroduceerd, ook worden hier de sponsoren weergeven en de verschillende manieren om een game te maken met de engine. Ook worden hier het meest recente nieuws weergeven en donaties gevraagd. Dit omdat de Godot engine volledig open source is en volledig runt op sponsoren en donateurs.">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
-hier de naam van de pagina  
- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Features  
+ <img src="readme-images/features.png" width="375px" alt="Op deze pagina worden de verschillende features dat Godot bied weergeven. Zowel de main features als de 2d en 3d features als de crossplatform features. Er word hier echt ingezet op mensen laten weten waarom Godot voor hun geschikt is.">
 
 </details>
 
@@ -122,15 +122,17 @@ Er is geen Light mode
 
 ### de hele pagina:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/hoofdbreakdownschets.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu):
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdownschets1.png" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter):
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdownschets2.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
+  <img src="readme-images/breakdownschets3.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
