@@ -172,10 +172,27 @@ samen met je groepje opstellen
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+De html ziet er over het algemeen prima uit, hier zijn enkele punten die genoemd zijn tijdens de meeting:
+
+Goed:
+
+1. De H1 geeft nu voldoende info over de website
+
+Verbeter punten:
+
+1. De alt tekst kan soms wat beter, bijvoorbeeld bij Hamburger menu is de tekst voor
+2. De image in acticles moeten in onderin gezet worden omdat de H2 en P belangrijker zijn, deze moeten met styling naar boven gezet worden
+3. Het type <date> bestaat niet, gebruik hiervoor <time datetime="">
+4. De 3 articles voor code etc hoeven niet in een list, om deze alsnog te stylen is het acceptabel om een div te gebruiken.
+5. Losse A's hoeven niet in een list, is overbodig en moet daarom verwijderd worden
+
+Kennis punt:
+
+1. Voor Javascript mogen wel ID's gebruikt worden
+2. Een figure is een foto met een caption eronder die informatie geeft over de foto
+3. Geen br's gebruiken in de html, dit is heel makkelijk in css te doen met een max-width
+4. position zou voor het hamburger menu een acceptabele manier zijn om te stylen
+5. Voor mobile first development begin met 320px scherm, als dat gelukt is ga dan verder naar ipad en desktop
 
 </details>
 
