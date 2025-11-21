@@ -145,15 +145,28 @@ Er is geen Light mode
 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+Ik ben nog niet zo ver als dat ik van te voren gehoopt had, ik kan met een gerust hart zeggen dat ik achter loop. Ik heb mijn vaardigheden met CSS overschat en deze voor mij compleet nieuwe manier van programmeren is voor mij een enorme uitdaging. Wel heb ik aardig wat stappen gemaakt met de HTML, ik heb de volledige HTML uitgeschreven. Ik heb het zo goed gedaan als dat de docent mij de afgelopen 2 weken geleerd heeft.
+
+Dit is de houdige status van mijn website:
+<img src="readme-images/Voortgang week 2.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
+Wat ik in de CSS vooral moeilijker vond dan gedacht is het selecteren van elementen zonder gebruik te maken van Classes of ID's. Voor mij is dit compleet nieuw terein, dit heb ik na een uitleg van mijn docent redelijk onder de knie. Nog steeds vind ik dit lastig en best intimiderend omdat het nieuw is maar ik denk dat met meer gebruik ik er binnenkort aan gewend zal zijn.
+
+Wat ik ook lastiger vond dan gedacht is het werken met GRID, in het verleden heb ik hier al eerder mee gewerkt maar ook toen waren GRID en ik nog niet echt buddy's. Het begint langzaam nu wel een klein beetje te komen maar nog steeds struggle ik er wel mee. Iets waar ik tegen aan liep was steeds de row of column template uistrijven, dus met 1fr 1fr 1fr 1fr etc. Het stylde maar niet goed voor een reden, toen ik repeat begon te gebruiken ging het snel al beter bijv repeat(7, auto). Ook gaf ik eerst alleen een GRID start een geen GRID end waardoor het ook een kliederboel werd, na uiteindelijk die te hebben vervangen met grid-row of grid-column ging het ook veel beter. Dit is een snippid van mijn code van hoe het er nu uitziet:
+
+<img src="readme-images/code1.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
+Deze week was om eerlijk te zijn voor mij en klap terug in de realiteit, ik dacht namelijk heel goed te zijn in HTML CSS maar nu kom ik erachter hoe gelimiteerd kwa kennis van zaken ik ben. Dit is te zien aan de vooruitgang die ik heb geboekt, ik ben er niet tevreden mee. Hoe nu verder? Ik zal extra bloed zweet en tranen in het process gaan stoppen, want ik ben er van overtuigt als ik mijn schouders eronder zet ik veel kan leren van dit project.
+
 ### Agenda voor meeting
 
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Tijn           | Ronald                                                                                                                                  | Daniel Post | Iz-Dine       |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ------------- | ----------------------------------------------------------- |
+| dit bespreken  | Is de structuur van de Html in orde?                                                                                                    | en ik dit   | en dan ik dat | Wat was uw idee van de download lastest stylen ook al weer? |
+| en dat ook nog | Is het acceptabel om een Div te gebruiken om een kleurtje over mijn background image te plaatsen? Zo nee hoe kan ik het dan beter doen? |
+| ...            | ...                                                                                                                                     | ...         | ...           |
 
 ### Verslag van meeting
 

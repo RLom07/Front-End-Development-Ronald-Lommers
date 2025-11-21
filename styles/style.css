@@ -28,16 +28,17 @@
 /****************/
 
 /* jouw code */
+
 body{
-	background-color: #25282b;
+	margin: 0;
+	background-color: var(--main-bg-color);
 }
 
 header ul {
 	width: 100%;
 	display: grid;
 	backdrop-filter: blur(12px);
-	-webkit-backdrop-filter: blur(12px);
-	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	align-items: center;
 	list-style: none;
 	padding: .5em;
@@ -46,33 +47,84 @@ header ul {
 
 header {
 	top: 0;
+	right: 0;
+	left: 0;
 	width: 100%;
 	position: fixed;
 }
 
-header ul li:first-of-type img {
+/* Logo */
+header ul li a:first-of-type img {
 	width: 136px;
 	height: 48px;
 }
 
+/* Donate position */
 header ul li:nth-of-type(2) {
 	justify-self: end;
 }
 
+/* Donate Styling */
 header ul li:nth-of-type(2) a {
-	color: white;
+	color: var(--txt-color);
 	text-decoration: none;
-	font-weight: 600;
+	background-color: var(--dn-btn-color);
+	font-family: Montserrat, serif;
+	
 }
 
 header ul li:nth-of-type(3) {
-	justify-self: end;
+	justify-self: center;
 }
 
 main section:first-of-type {
 	background-image: url(../images/banner.avif);
-	color: #25282b;
 	background-size: cover;
 	background-position: center;
-	min-height: 100vh;
+	min-height: 75vh;
+	min-width: 101vw;
+	display: grid;
+	grid-template-rows: repeat(7, auto);
+	grid-template-columns: repeat(4, auto);
+}
+
+main section:first-of-type h1 {
+	color: var(--txt-color);
+	font-family: Montserrat, serif;
+	text-align: center;
+	grid-column: 1 / 5;
+	grid-row: 3 / 3;
+}
+
+main section:first-of-type p:first-of-type {
+	grid-column: 1 / 5;
+	grid-row: 4 / 5;
+	text-align: center;
+	color: var(--txt-color);
+	font-family: Montserrat, serif;
+	font-size: 20px;
+}
+
+main section:nth-of-type(1) p:last-of-type {
+	grid-row-start: 5;
+	color: var(--txt-color);
+}
+
+main section:first-of-type a:first-of-type {
+	grid-column: 2 / 4;
+	grid-row: 5 / 5;
+	justify-self: center;
+}
+
+main section:first-of-type a:nth-of-type(2) {
+	grid-column: 2 / 4;
+	grid-row: 6 / 6;
+	justify-self: center;
+}
+
+main section:first-of-type p:nth-of-type(2) {
+	grid-column: 1 / 5;
+	grid-row: 7 / 7;
+	justify-self: center;
+	text-align: center;
 }
