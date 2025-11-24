@@ -291,6 +291,8 @@ Korte omschrijving met plaatjes
 
 ## Bronnenlijst
 
+W3Schools
+
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
