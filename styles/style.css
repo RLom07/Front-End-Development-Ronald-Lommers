@@ -34,15 +34,8 @@ body{
 	background-color: var(--main-bg-color);
 }
 
-header ul {
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	backdrop-filter: blur(12px);
-	align-items: center;
-	list-style: none;
-	padding: .5em;
-	margin: 0;
+header nav ul {
+	display: none;
 }
 
 header {
@@ -51,39 +44,44 @@ header {
 	left: 0;
 	width: 100%;
 	position: fixed;
+	display: flex;
+	justify-content: space-around;
+	backdrop-filter: blur(10px);
 }
 
 /* Logo */
-header ul li:first-of-type a:first-of-type img {
-	width: 136px;
-	height: 48px;
+header>a:first-of-type img {
+	width: 8.5rem;
+	height: 3rem;
 }
 
 /* Donate position */
-header ul li:nth-of-type(2) {
-	justify-self: end;
-}
-
-/* Donate Styling */
-header ul li:nth-of-type(2) a {
+header>a:nth-of-type(2) {
 	color: var(--txt-color);
 	text-decoration: none;
 	background-color: var(--dn-btn-color);
 	font-family: Montserrat, serif;
-	padding: .8em;
-	border-radius: 10px;
-	
+	padding: .8rem 1.2rem;
+	border-radius: .63rem;
+
+	display: inline-flex;
+	align-items: center;
+	gap: .5rem;
 }
 
-header ul li:nth-of-type(2) img {
-	width: 13px;
+header>a:nth-of-type(2) img {
+	width: .81rem;
 	height: auto;
 }
 
-header ul li:nth-of-type(3) {
-	justify-self: center;
+
+header>img:nth-of-type(1) {
+	display: none;
 }
 
+/* SECTION 1 */
+
+/* eerste section algemene styling */
 main section:first-of-type {
 	background-image: url(../images/banner.png);
 	background-size: cover;
@@ -96,7 +94,7 @@ main section:first-of-type {
 main section:first-of-type h1 {
 	color: var(--txt-color);
 	font-family: Montserrat, serif;
-	font-size: 40px;
+	font-size: 2.5rem;
 	text-align: center;
 	grid-column: 1 / 5;
 	grid-row-start: 2;
@@ -108,9 +106,10 @@ main section:first-of-type p:first-of-type {
 	text-align: center;
 	color: var(--txt-color);
 	font-family: Montserrat, serif;
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
+/* Download latest button algemene styling */
 main section:first-of-type>a:first-of-type {
 	grid-column: 1 / 5;
 	grid-row-start: 5;
@@ -121,16 +120,39 @@ main section:first-of-type>a:first-of-type {
 
 	background: var(--txt-color);
 	color: var(--dwnl-btn-txt-color);
-	border-radius: 15px;
+	border-radius: .94rem;
 	font-family: Montserrat, sans-serif;
 	font-weight: 800;
 	text-decoration: none;
 	text-align: center;
 	width: fit-content;
 	max-width: 100%;
-	box-shadow: .01em .01em black;
+	box-shadow: .01rem .01rem black;
 }
 
+/* Download latest button styling witte gedeelte */
+main section:first-of-type>a:first-of-type span:first-of-type {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 1.2rem;
+	white-space: normal;
+	text-align: center;
+}
+
+/* Download latest button styling blauwe gedeelte */
+main section:first-of-type>a:first-of-type span:nth-of-type(2) {
+	background: var(--ltst-btn-color);
+	color: var(--txt-color);
+	padding: 1rem 1rem;
+	border-radius: 0 .93rem .93rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Styling what's new button */
 main section:first-of-type>a:nth-of-type(2) {
 	grid-column: 2 / 4;
 	grid-row-start: 7;
@@ -139,36 +161,17 @@ main section:first-of-type>a:nth-of-type(2) {
 	background-color: var(--wtsn-btn-color);
 	padding: 1em 3.1em;
 	max-width: 100%;
-	border-radius: 15px;
+	border-radius: .93rem;
 	color: var(--txt-color);
 	text-decoration: none;
 	font-family: Montserrat, sans-serif;
-	font-size: 18px;
+	font-size: 1.12rem;
 	font-weight: 800;
 	opacity: 1;
-	box-shadow: .01em .01em black;
+	box-shadow: .01rem .01rem black;
 }
 
-main section:first-of-type>a:first-of-type span:first-of-type {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 1em 1.2em;
-	white-space: normal;
-	text-align: center;
-}
-
-main section:first-of-type>a:first-of-type span:nth-of-type(2) {
-	background: var(--ltst-btn-color);
-	color: var(--txt-color);
-	padding: 1em 1em;
-	border-radius: 0 15px 15px 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
+/* Looking for Godot 3 etc tekst algemene styling */
 main section:first-of-type p:nth-of-type(2) {
 	grid-column: 1 / 5;
 	grid-row-start: 8;
@@ -176,46 +179,126 @@ main section:first-of-type p:nth-of-type(2) {
 	text-align: center;
 	color: var(--txt-color);
 	font-family: Montserrat, serif;
-	font-size: 15px;
+	font-size: .93rem;
 }
 
-main section:first-of-type p:nth-of-type(2) a:first-of-type {
+/* Looking for Godot 3 etc link styling */
+main section:first-of-type p:nth-of-type(2) a {
 	color: var(--txt-color);
 }
 
-main section:first-of-type p:nth-of-type(2) a:nth-of-type(2) {
-	color: var(--txt-color);
-}
-
-main section:first-of-type p:nth-of-type(2) a:nth-of-type(3) {
-	color: var(--txt-color);
-}
-
+/* Author background image styling (Polychroma) */
 main section:first-of-type>a:nth-of-type(3) {
 	grid-column: 2 / 4;
 	grid-row-start: 10;
 	justify-self: center;
 	color: var(--txt-color);
-	font-size: 15px;
+	font-size: .93rem;
 	font-family: Montserrat, serif;
 	background-color: var(--auth-bckg-color);
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: .2em;
-	border-radius: 5px;
+	padding: .2rem;
+	border-radius: .31rem;
 	opacity: .5;
 }
 
-@media (max-width: 500px) {
-	main section:first-of-type>a:first-of-type span:first-of-type {
-		max-width: 10ch;
-		padding: 1.3em 5em;
-	}
+/* SECTION 2 */
+
+main section:nth-of-type(2) h2{
+	font-size: var(--font-size-h2);
+	font-family: Montserrat, serif;
+	color: var(--txt-color);
+}
+main section:nth-of-type(2)>ul{
+	display: grid;
+	grid-template-rows: auto .5fr 1fr 1fr ;
+	list-style-type: none;
+	font-family: Montserrat, serif;
+	padding: .5rem;
+	margin: 0;
 }
 
-@media (min-width: 701px) {
+/* Styling alle items */
+main section:nth-of-type(2) a {
+	text-decoration: none;
+	color: var(--ltst-nws-txt-color);
+}
+
+/* Gridverdeling alle items */
+main section:nth-of-type(2) article {
+	display: grid;
+	grid-template-columns: 1fr .1fr 2fr;
+	grid-template-rows: 1fr .2fr 1fr;
+}
+
+/* H3 styling alle items */
+main section:nth-of-type(2) article h3{
+	color: var(--txt-color);
+	font-size: 1.19rem;
+	margin: 0;
+	grid-column-start: 3;
+}
+
+/* P styling alle items */
+main section:nth-of-type(2) article p{
+	display: none;
+	font-size: var(--font-size-p);
+}
+
+/* Image styling alle items */
+main section:nth-of-type(2) article img {
+	width: 5rem;
+	height: 2.81rem;
+	grid-row-start: 1;
+	border-radius: .44rem;
+	box-shadow: .1rem .1rem black;
+}
+
+/* Datum indeling alle items */
+main section:nth-of-type(2) article time {
+	grid-column-start: 3;
+	grid-row-start: 3;
+}
+
+/* Gridverdeling overschrijving eerste item */
+main section:nth-of-type(2) li:first-of-type article {
+	display: grid;
+	grid-template-rows: repeat(4, .3fr);
+	grid-template-columns: none;
+}
+
+/* H3 overschrijving eerste item */
+main section:nth-of-type(2) li:first-of-type article:first-of-type h3 {
+	color: var(--txt-color);
+	font-size: 1.4rem;
+	grid-column-start: 1;
+}
+
+/* P overschrijving eerste item */
+main section:nth-of-type(2) li:first-of-type article:first-of-type p {
+	display: block;
+}
+
+/* Datum overschrijving eerste item */
+main section:nth-of-type(2) li:first-of-type article:first-of-type time {
+	grid-column-start: 1;
+	grid-row-start: 4;
+}
+
+/* Image styling overschrijving eerste item */
+main section:nth-of-type(2) li:first-of-type article:first-of-type img{
+	width: 18rem;
+	height: 10.13rem;
+}
+
+
+@media (min-width: 900px) {
+
+	/* SECTION 1 */
+
 	main section:first-of-type>a:first-of-type span:first-of-type {
 		max-width: none;
 	}
@@ -227,7 +310,7 @@ main section:first-of-type>a:nth-of-type(3) {
 	}
 
 	main section:first-of-type h1 {
-		font-size: 60px;
+		font-size: 3.75rem;
 		text-align: start;
 		grid-column: 2 / 5;
 		grid-row-start: 3;
@@ -242,12 +325,12 @@ main section:first-of-type>a:nth-of-type(3) {
 	main section:first-of-type>a:first-of-type {
 		grid-column: 2 / 3;
 		grid-row-start: 6;
-		border-radius: 10px;
+		border-radius: .63rem;
 		justify-self: start;
 	}
 
 	main section:first-of-type>a:first-of-type span:nth-of-type(2) {
-		border-radius: 0 10px 10px 0;
+		border-radius: 0 .63rem .63rem 0;
 	}
 
 	main section:first-of-type>a:nth-of-type(2) {
@@ -266,8 +349,99 @@ main section:first-of-type>a:nth-of-type(3) {
 		grid-column: 5 / 6;
 		grid-row-start: 11;
 		justify-self: center;
-		border-radius: 10px;
-		padding: .3em;
-		font-size: 18px;
+		border-radius: .63rem;
+		padding: .3rem;
+		font-size: 1.13rem;
+	}
+
+
+	/* SECTION 2 */
+
+	main section:nth-of-type(2) ul{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+
+	main section:nth-of-type(2) {
+		padding: 4rem;
+	}
+
+	/* Gridverdeling alle items */
+	main section:nth-of-type(2) article {
+		display: grid;
+		grid-template-columns: .5fr .1fr 1fr;
+		grid-template-rows: .1fr .1fr .1fr;
+		grid-row-start: 1;
+		grid-column-start: 2;
+	}
+
+	/* H3 styling alle items */
+	main section:nth-of-type(2) article h3 {
+		grid-column-start: 3;
+		grid-row-start: 1;
+	}
+
+	/* P styling alle items */
+	main section:nth-of-type(2) article p {
+		display: block;
+		font-size: var(--font-size-p);
+		grid-column-start: 3;
+		grid-row-start: 1;
+	}
+
+	/* Image styling alle items */
+	main section:nth-of-type(2) article img {
+		width: 10rem;
+		height: 5.63rem;
+		justify-self: end;
+		grid-row-start: 1;
+	}
+
+	/* Datum indeling alle items */
+	main section:nth-of-type(2) article time {
+		grid-column-start: 3;
+		grid-row-start: 2;
+	}
+
+	main section:nth-of-type(2) li:first-of-type {
+		grid-row: 1 / 4;
+	}
+
+	/* Gridverdeling overschrijving eerste item */
+	main section:nth-of-type(2) li:first-of-type article {
+		display: grid;
+		grid-template-rows: auto .5fr .25fr .25fr;
+	}
+
+	/* H3 overschrijving eerste item */
+	main section:nth-of-type(2) li:first-of-type article:first-of-type h3 {
+		color: var(--txt-color);
+		font-size: 1.4rem;
+		grid-column-start: 1;
+		grid-row-start: 3;
+		max-width: 42ch;
+	}
+
+	/* P overschrijving eerste item */
+	main section:nth-of-type(2) li:first-of-type article:first-of-type p {
+		display: block;
+		grid-row-start: 4;
+		max-width: 50ch;
+		grid-column-start: 1;
+	}
+
+	/* Datum overschrijving eerste item */
+	main section:nth-of-type(2) li:first-of-type article:first-of-type time {
+		grid-column-start: 1;
+		grid-row-start: 5;
+	}
+
+	/* Image styling overschrijving eerste item */
+	main section:nth-of-type(2) li:first-of-type article:first-of-type img {
+		width: 36.6rem;
+		height: 20.6rem;
+		justify-self: start;
 	}
 }
