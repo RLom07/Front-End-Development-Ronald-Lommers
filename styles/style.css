@@ -211,6 +211,7 @@ main section:nth-of-type(2) h2{
 	font-size: var(--font-size-h2);
 	font-family: Montserrat, serif;
 	color: var(--txt-color);
+	font-weight: 800;
 }
 main section:nth-of-type(2)>ul{
 	display: grid;
@@ -314,6 +315,7 @@ main section:nth-of-type(3) h2 {
 	font-family: Montserrat, sans-serif;
 	font-size: var(--font-size-h2);
 	color: var(--txt-color);
+	font-weight: 800;
 }
 
 main section:nth-of-type(3)>p {
@@ -374,6 +376,74 @@ main section:nth-of-type(3) article a {
 	font-weight: 800;
 }
 
+
+/* SECTION 4 */
+
+main section:nth-of-type(4){
+	padding: 2rem;
+}
+
+main section:nth-of-type(4) ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	gap: 2rem;	
+	margin: 0;
+	padding: 0;
+}
+
+main section:nth-of-type(4) h2 {
+	font-family: Montserrat, sans-serif;
+	font-size: var(--font-size-h2);
+	color: var(--txt-color);
+	font-weight: 800;
+}
+
+main section:nth-of-type(4) h3 {
+	font-family: Montserrat, sans-serif;
+	font-size: var(--font-size-spnsr-h3);
+	color: var(--txt-color);
+	font-weight: 400;
+}
+
+main section:nth-of-type(4)>a:first-of-type {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 6rem;
+	padding: 1rem;
+	background: var(--spnsr-btn-color);
+	border-radius: .5rem;
+}
+
+main section:nth-of-type(4) ul li {
+	flex: 1 1 10rem;
+}
+
+main section:nth-of-type(4) ul li a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 6rem;
+	padding: 1rem;
+	background: var(--spnsr-btn-color);
+	border-radius: .5rem;
+}
+
+main section:nth-of-type(4) ul li a img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+	display: block;
+}
+
+main section:nth-of-type(4)>a:first-of-type img {
+	width: 13.875rem;
+	height: 1.09375rem;
+	align-self: center;
+}
+
 @media (min-width: 500px) {
 	/* SECTION 2 */
 
@@ -393,6 +463,13 @@ main section:nth-of-type(3) article a {
 	/* Datum indeling alle items */
 	main section:nth-of-type(2) article time {
 		grid-column: 2 / 4;
+	}
+}
+
+@media (min-width: 768px){
+	main section:nth-of-type(4) ul {
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 }
 
