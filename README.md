@@ -203,17 +203,41 @@ Kennis punt:
 
 ### Stand van zaken
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Een week later ben ik tegen alle verwachtingen in toch wat meer vriendjes geworden met Flex en Grid. Hier had ik de week ervoor nog enorme moeite mee maar het is eindelijk een beetje door gaan dringen. Helaas ben ik deze week opnieuw minder ver als dat ik had gehoopt, ik heb deze week er extra hard aan gewerkt alleen de website blijft mij verbazen met nieuwe dingen die lastig uit te werken zijn. Wat wel zeer goed ging was het uitwerken van de derde section, deze was goed te doen en had ik daarom bijzonder snel afgerond. Wat wel erg moeilijk was, was de tweede sectie. Deze was lastig maar niet onmogelijk te doen, na een uurtje had ik deze volledig responsive af.
+
+Responsiveness is ook iets waar ik altijd mee gestruggled heb sinds ik begon met programmeren, door gebruik te maken van grid en flex is dat tevens we wat makkelijker geworden maar toch blijft het iets wat ik moeilijk vind. Vandaar dat ik ook voor Responsiveness heb gekozen, dit heb ik gedaan zodat ik hieraan kan werken en er beter ik kan worden. De eerste sectie resposive maken ging redelijk goed, het was even puzzelen maar na enige tijd was het wat mij betreft goed gelukt. De tweede sectie responsive maken was al een enorme klus, hier heb ik tot nu toe het langste mee gestruggled maar uiteindelijk is ook dat redelijk goed gelukt. De derde sectie ging daarintegen goed, deze had ik binnen een uur opgezet en responsive uitgewerkt. De vierde sectie is waar ik tegenaan liep, mij was aangeraden hier flex voor te gebruiken en dat heb ik gedaan alleen heb ik moeite met elementen laten groeien aan de hand van de parent of screen. Hier ben ik vast gelopen omdat alle elementen niet alleen mee moeten groeien met een scherm maar alle foto's in de elementen hebben allemaal verschillende grootte wat dit een enorme uitdaging maakt. Hierdoor ben ik niet zo ver gekomen als dat ik gehoopt had, ik hoopte deze week de eerste pagina en de header en footer af te hebben. Helaas is de eerste pagina nog niet compleet vanwege de vierde sectie en zijn de header en footer ook nog allebei niet helemaal klaar.
+
+Hoe nu verder?
+Ik zal aankomende week nog meer gas geven en meer hulp vragen bij dingen waar ik vast loop, nu ik grid en flex redelijk onder de knie heb en wat comfortabeler ben met responsiveness denk ik als ik er meer tijd in stop en vragen stel bij vast lopen dit tot een goed resultaat kan leiden.
+
+Screenshot Mobile:
+<img src="readme-images/Voortgang week 3 mobile.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
+Screenshot Desktop:
+<img src="readme-images/Voortgang week 3 Desktop.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 ### Agenda voor meeting
 
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Ronald         | Tijn               | Iz-Dine      | Daniel           |
 | -------------- | ------------------ | ------------ | ---------------- |
 | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
+
+Ronald:
+Is mijn huidige gebruik van CSS goed of moet ik nog dingen aanpassen?
+Is het gebruik van commends zo duidelijk?
+Is de alt tekst van bepaalde afbeeldingen duidelijk genoeg?
+Voor sectie 4 had u mij flex aangeraden als manier van styling, de foto’s en achtergrond schalen mee hoe groter het scherm word. Dit is mij nog niet gelukt op te lossen omdat ik het niet snap. Zou u mij hierbij kunnen helpen?
+Loop ik op dit moment bij of loop ik achter?
+
+Tijn:
+Is de grid structuur van mijn tweede pagina zo goed?
+
+Daniel:
+Hoe moet ik de custom properties gebruiken? Dat is mij nog niet helemaal duidelijk
 
 ### Verslag van meeting
 

@@ -407,41 +407,30 @@ main section:nth-of-type(4) h3 {
 	font-weight: 400;
 }
 
-main section:nth-of-type(4)>a:first-of-type {
-	display: flex;
+main section:nth-of-type(4) a:has(img) {
+	display: inline-flex;
+	padding: 1rem;
+	border-radius: .5rem;
+	background: var(--spnsr-btn-color);
 	align-items: center;
 	justify-content: center;
-	height: 6rem;
-	padding: 1rem;
-	background: var(--spnsr-btn-color);
-	border-radius: .5rem;
-}
-
-main section:nth-of-type(4) ul li {
-	flex: 1 1 10rem;
-}
-
-main section:nth-of-type(4) ul li a {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 6rem;
-	padding: 1rem;
-	background: var(--spnsr-btn-color);
-	border-radius: .5rem;
-}
-
-main section:nth-of-type(4) ul li a img {
-	max-width: 100%;
-	max-height: 100%;
-	object-fit: contain;
-	display: block;
+	flex-wrap: wrap;
 }
 
 main section:nth-of-type(4)>a:first-of-type img {
-	width: 13.875rem;
-	height: 1.09375rem;
-	align-self: center;
+	max-width: 90%;
+}
+
+main section:nth-of-type(4) ul:first-of-type img {
+	max-width: 80%;
+}
+
+main section:nth-of-type(4) ul:nth-of-type(2) img {
+	max-width: 60%;
+}
+
+main section:nth-of-type(4) ul:nth-of-type(3) img {
+	max-width: 40%;
 }
 
 @media (min-width: 500px) {
@@ -470,6 +459,30 @@ main section:nth-of-type(4)>a:first-of-type img {
 	main section:nth-of-type(4) ul {
 		flex-direction: row;
 		flex-wrap: wrap;
+	}
+
+	main section:nth-of-type(4) ul:first-of-type a {
+		max-width: 60%;
+	}
+
+	main section:nth-of-type(4)>a:first-of-type img {
+		max-width: 60%;
+	}
+
+	main section:nth-of-type(4) ul:nth-of-type(2) a {
+		max-width: 30%;
+	}
+
+	main section:nth-of-type(4) ul:first-of-type img {
+		max-width: 40%;
+	}
+
+	main section:nth-of-type(4) ul:nth-of-type(2) img {
+		max-width: 20%;
+	}
+
+	main section:nth-of-type(4) ul:nth-of-type(3) img {
+		max-width: 10%;
 	}
 }
 
