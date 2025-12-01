@@ -27,16 +27,15 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+/* BODY */
 
 body{
 	margin: 0;
 	background-color: var(--main-bg-color);
 }
 
-header nav ul {
-	display: none;
-}
+
+/* HEADER */
 
 header {
 	top: 0;
@@ -47,6 +46,10 @@ header {
 	display: flex;
 	justify-content: space-around;
 	backdrop-filter: blur(10px);
+}
+
+header nav ul {
+	display: none;
 }
 
 /* Logo */
@@ -408,13 +411,12 @@ main section:nth-of-type(4) h3 {
 }
 
 main section:nth-of-type(4) a:has(img) {
-	display: inline-flex;
+	display: flex;
 	padding: 1rem;
 	border-radius: .5rem;
 	background: var(--spnsr-btn-color);
 	align-items: center;
 	justify-content: center;
-	flex-wrap: wrap;
 }
 
 main section:nth-of-type(4)>a:first-of-type img {
@@ -431,6 +433,36 @@ main section:nth-of-type(4) ul:nth-of-type(2) img {
 
 main section:nth-of-type(4) ul:nth-of-type(3) img {
 	max-width: 40%;
+}
+
+
+/* FOOTER */
+
+footer{
+	background-color: var(--ftr-color);
+	padding: 2rem;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer h2 {
+	color: var(--txt-color);
+	font-size: var(--font-size-h3);
+	font-weight: 800;
+	font-family: Montserrat, sans-serif;
+}
+
+footer ul a {
+	color: var(--ftr-txt-color);
+	text-decoration: none;
+	font-family: Montserrat, sans-serif;
 }
 
 @media (min-width: 500px) {

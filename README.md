@@ -232,6 +232,7 @@ Is het gebruik van commends zo duidelijk?
 Is de alt tekst van bepaalde afbeeldingen duidelijk genoeg?
 Voor sectie 4 had u mij flex aangeraden als manier van styling, de foto’s en achtergrond schalen mee hoe groter het scherm word. Dit is mij nog niet gelukt op te lossen omdat ik het niet snap. Zou u mij hierbij kunnen helpen?
 Loop ik op dit moment bij of loop ik achter?
+In de footer staan op de officiele website h2's maar omdat ze zo klein zijn vind ik ze meer h3's. Mag ik deze veranderen naar h3's of zo houden?
 
 Tijn:
 Is de grid structuur van mijn tweede pagina zo goed?
@@ -243,10 +244,35 @@ Hoe moet ik de custom properties gebruiken? Dat is mij nog niet helemaal duideli
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+Goed:
+Css gaat goed
+
+Verbeterpunt:
+Gebruik een <em> voor het stylen van de latest version knop
+Maak het icoontje voor het hamburger menu een button
+
+Kennis punt:
+Bij een label waar een for in staat is het goed dat je een ID gebruikt(Het moet zelfs)
+In plaats van list style none gebruiken gebruik list-style-type:""
+gebruik Flex basis voor de li
+gebruik flex grow voor het opvullen
+zet images op block om line eronder te verwijderen
+voor light dark mode zet daarboven color-scheme: "light-dark"
+zet in de root de font-family in de html,body tag
+voor grid is er ook iets genaamd max-content
+voor grid is eer ooks iets genaamd grid-template-areas
+in grid heb je ook column-gap
+je kunt ook nth-of-type(even) doen voor even elementen
+& is voor een bijzonderheid in de code
+Css in volgorde van html
+bovenaan generieke dingen en onderaan specifieke dingen
+Van groot naar klein in css
+efficiente css schrijven is niet het doel, het doel is om begrijpbare code te schrijven
+bij width kan fit-content gebruikt worden
+margin-inline mag worden gebruikt als een geen flex of grid gebruikt word
+::after kan worden gebruikt voor mijn download latest knop, gebruik display: flex en gap voor ruimte ertussen
+bij ::after moet er content: "" zijn maar deze zou leeg mogen blijven
+::after mag niet worden gebruikt worden voor mijn download latest button, hier moet echt een <em> voor worden gebruikt
 
 </details>
 
