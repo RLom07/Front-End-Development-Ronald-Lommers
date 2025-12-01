@@ -38,13 +38,19 @@ https://godotengine.org/
 
 #### Screenshot(s) van de eerste pagina (small screen):
 
-Homepage
-<img src="readme-images/homepage.png" width="375px" alt="Op de homepagina word de Godot game engine kort geintroduceerd, ook worden hier de sponsoren weergeven en de verschillende manieren om een game te maken met de engine. Ook worden hier het meest recente nieuws weergeven en donaties gevraagd. Dit omdat de Godot engine volledig open source is en volledig runt op sponsoren en donateurs.">
+Homepage-Desktop
+<img src="readme-images/Homepage-Desktop.png" width="375px" alt="Op de homepagina word de Godot game engine kort geintroduceerd, ook worden hier de sponsoren weergeven en de verschillende manieren om een game te maken met de engine. Ook worden hier het meest recente nieuws weergeven en donaties gevraagd. Dit omdat de Godot engine volledig open source is en volledig runt op sponsoren en donateurs.">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
-Features  
- <img src="readme-images/features.png" width="375px" alt="Op deze pagina worden de verschillende features dat Godot bied weergeven. Zowel de main features als de 2d en 3d features als de crossplatform features. Er word hier echt ingezet op mensen laten weten waarom Godot voor hun geschikt is.">
+Features-Desktop
+<img src="readme-images/Features-Desktop.png" width="375px" alt="Op deze pagina worden de verschillende features dat Godot bied weergeven. Zowel de main features als de 2d en 3d features als de crossplatform features. Er word hier echt ingezet op mensen laten weten waarom Godot voor hun geschikt is.">
+
+Homepage-Mobile
+<img src="readme-images/Homepage-mobile.png" width="375px" alt="Op de homepagina word de Godot game engine kort geintroduceerd, ook worden hier de sponsoren weergeven en de verschillende manieren om een game te maken met de engine. Ook worden hier het meest recente nieuws weergeven en donaties gevraagd. Dit omdat de Godot engine volledig open source is en volledig runt op sponsoren en donateurs.">
+
+Features-Mobile
+<img src="readme-images/Features-mobile.png" width="375px" alt="Op deze pagina worden de verschillende features dat Godot bied weergeven. Zowel de main features als de 2d en 3d features als de crossplatform features. Er word hier echt ingezet op mensen laten weten waarom Godot voor hun geschikt is.">
 
 </details>
 

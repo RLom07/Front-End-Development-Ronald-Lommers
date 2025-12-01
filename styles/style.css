@@ -58,7 +58,11 @@ header>a:first-of-type img {
 	height: 3rem;
 }
 
-/* Donate position */
+header>a:first-of-type img:hover{
+	filter: brightness(120%); /* Hulp bron: W3schools */
+}
+
+/* Donate button */
 header>a:nth-of-type(2) {
 	color: var(--txt-color);
 	text-decoration: none;
@@ -67,8 +71,13 @@ header>a:nth-of-type(2) {
 	border-radius: .63rem;
 
 	display: inline-flex;
+	justify-self: flex-end;
 	align-items: center;
 	gap: .5rem;
+}
+
+header>a:nth-of-type(2):hover {
+	background-color: #FF6688;
 }
 
 /* Hartje in Donate Knop */
@@ -77,8 +86,12 @@ header>a:nth-of-type(2) img {
 	height: auto;
 }
 
-/* taal veranderen knop */
-header button:nth-of-type(1) {
+select {
+	display: none;
+}
+
+/* taal veranderen */
+header>img:nth-of-type(1) {
 	display: none;
 }
 
@@ -641,7 +654,7 @@ footer ul a {
 
 	header nav {
 		display: flex;
-		gap: 8rem;
+		gap: 4rem;
 	}
 
 	/* Alle nav items in header */
@@ -667,16 +680,11 @@ footer ul a {
 		background-color: #ffffff1a;
 	}
 
-	/* taal veranderen knop */
-	header button:nth-of-type(1) {
+	/* taal veranderen */
+	header>img:nth-of-type(1) {
 		display: block;
-		background: none;
-		border: none;
-		align-self: flex-end;
-	}
-
-	header button:nth-of-type(1):hover{
-		cursor: pointer;
+		width: auto;
+		height: 2.49rem;
 	}
 
 
@@ -687,6 +695,7 @@ footer ul a {
 	}
 
 	::picker(select) {
+		translate: 25rem;
 		border-radius: 10px;
 		background-color: #00000099;
 		border-color: gray;
@@ -695,12 +704,12 @@ footer ul a {
 	}
 
 	select{
-		background-color: none;
+		display: block;
+		position: absolute;
+		translate: 29rem;
 		border: none;
-	}
-
-	selectedcontent {
-		display: none;
+		opacity: 0;
+		cursor: pointer;
 	}
 
 	::picker-icon{
@@ -716,11 +725,6 @@ footer ul a {
 		padding-bottom: .5rem;
 		text-align: center;
 		display: block;
-	}
-
-	header button img {
-		width: auto;
-		height: 2.69rem;
 	}
 
 	/* Hamburger Menu Icon */
