@@ -3,6 +3,11 @@
     src: url(../fonts/Montserrat-VariableFont_wght.woff2);
 }
 
+html,
+body{
+    font-family: Montserrat, sans-serif;
+}
+
 :root{
     --main-bg-color: #25282b;
     --txt-color: white;
