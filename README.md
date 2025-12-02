@@ -348,7 +348,9 @@ Korte omschrijving met plaatjes
 ## Bronnenlijst
 
 W3Schools
-https://una.im/select-updates/
+UNA
+MDN
+GODOT
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
