@@ -8,10 +8,21 @@ body{
     font-family: Montserrat, sans-serif;
 }
 
+
+/* Bron hulp light dark mode: MDN light-dark() */
+
 :root{
-    --main-bg-color: #25282b;
-    --txt-color: white;
-    --scnd-txt-color: #989A9B;
+
+    color-scheme: light dark;
+
+    --main-bg-color: light-dark(#EFF1F5, #25282b);
+    --main-txt-color: light-dark(#546B99, #FFFF); 
+    --scnd-txt-color: light-dark(#4A5365, #FFFFFFE6);
+    --main-btn-color: light-dark(#FFFF, #333639);
+    --gtinvlvd-btn-color: #6F6F6F45;
+    --lrn-mr-btn-color: light-dark(#12597F, #85C2E0);
+    --color-white: #ffff;
+    --thrd-txt-color: #989A9B;
     --lnk-txt-color: #668FA0;
     --spnsr-btn-color: #FFFFFF;
     --dn-btn-color: #F35774;
@@ -19,10 +30,10 @@ body{
     --ltst-btn-color: #2e8adf;
     --wtsn-btn-color: rgba(122, 121, 125, 0.5);
     --auth-bckg-color: #1a1a1a7a;
-    --lrn-mr-btn-color: #85C2E0;
     --ltst-nws-txt-color: #FFFFFFE6;
-    --ftr-txt-color: #898989;
-    --ftr-color: #111111;
+    --ftr-bg-txt-color: (#2C2C2C, #FFFFFF);
+    --ftr-txt-color: light-dark(#2C2C2C, #898989);
+    --ftr-color: light-dark(#ffff, #111111);
     --hmb-mnu-bckgrnd-color: #333639;
     --font-size-p: 1.125rem;
     --font-size-h2: 2.25rem;

@@ -48,6 +48,16 @@ header {
 	backdrop-filter: blur(10px);
 }
 
+/* Logo */
+header>a:first-of-type img {
+	width: 8.5rem;
+	height: 3rem;
+}
+
+header>a:first-of-type img:hover {
+	filter: brightness(120%);
+	/* Hulp bron: W3schools */
+}
 
 header nav {
 	position: absolute;
@@ -84,23 +94,22 @@ header nav ul+ul {
 /* Styling hamburger menu items */
 header nav ul li a {
 	text-decoration: none;
-	color: var(--txt-color);
+	color: var(--color-white);
 	padding: 1rem;
 }
 
-/* Logo */
-header>a:first-of-type img {
-	width: 8.5rem;
-	height: 3rem;
+select {
+	display: none;
 }
 
-header>a:first-of-type img:hover{
-	filter: brightness(120%); /* Hulp bron: W3schools */
+/* taal veranderen */
+header>img:nth-of-type(1) {
+	display: none;
 }
 
 /* Donate button */
 header>a:nth-of-type(2) {
-	color: var(--txt-color);
+	color: var(--color-white);
 	text-decoration: none;
 	background-color: var(--dn-btn-color);
 	padding: .8rem 1.2rem;
@@ -120,15 +129,6 @@ header>a:nth-of-type(2):hover {
 header>a:nth-of-type(2) img {
 	width: .81rem;
 	height: auto;
-}
-
-select {
-	display: none;
-}
-
-/* taal veranderen */
-header>img:nth-of-type(1) {
-	display: none;
 }
 
 /* Styling van de knop om het hamburger menu icoontje heen*/
@@ -189,7 +189,7 @@ main section:first-of-type {
 }
 
 main section:first-of-type h1 {
-	color: var(--txt-color);
+	color: var(--color-white);
 	font-size: 2.5rem;
 	text-align: center;
 	grid-column: 1 / 5;
@@ -200,7 +200,7 @@ main section:first-of-type p:first-of-type {
 	grid-column: 1 / 5;
 	grid-row: 3 / 4;
 	text-align: center;
-	color: var(--txt-color);
+	color: var(--color-white);
 	font-size: 1.25rem;
 }
 
@@ -213,7 +213,7 @@ main section:first-of-type>a:first-of-type {
 	display: flex;
 	align-items: stretch;
 
-	background: var(--txt-color);
+	background: #ffff;
 	color: var(--dwnl-btn-txt-color);
 	border-radius: .94rem;
 	font-weight: 800;
@@ -238,7 +238,7 @@ main section:first-of-type>a:first-of-type span:first-of-type {
 /* Download latest button styling blauwe gedeelte */
 main section:first-of-type>a:first-of-type span:nth-of-type(2) {
 	background: var(--ltst-btn-color);
-	color: var(--txt-color);
+	color: var(--color-white);
 	padding: 1rem 1rem;
 	border-radius: 0 .93rem .93rem 0;
 	display: flex;
@@ -256,7 +256,7 @@ main section:first-of-type>a:nth-of-type(2) {
 	padding: 1em 3.1em;
 	max-width: 100%;
 	border-radius: .93rem;
-	color: var(--txt-color);
+	color: var(--color-white);
 	text-decoration: none;
 	font-size: 1.12rem;
 	font-weight: 800;
@@ -270,13 +270,13 @@ main section:first-of-type p:nth-of-type(2) {
 	grid-row-start: 8;
 	justify-self: center;
 	text-align: center;
-	color: var(--txt-color);
+	color: var(--color-white);
 	font-size: .93rem;
 }
 
 /* Looking for Godot 3 etc link styling */
 main section:first-of-type p:nth-of-type(2) a {
-	color: var(--txt-color);
+	color: var(--color-white);
 }
 
 /* Author background image styling (Polychroma) */
@@ -284,7 +284,7 @@ main section:first-of-type>a:nth-of-type(3) {
 	grid-column: 2 / 4;
 	grid-row-start: 10;
 	justify-self: center;
-	color: var(--txt-color);
+	color: var(--color-white);
 	font-size: .93rem;
 	background-color: var(--auth-bckg-color);
 
@@ -300,7 +300,7 @@ main section:first-of-type>a:nth-of-type(3) {
 
 main section:nth-of-type(2) h2{
 	font-size: var(--font-size-h2);
-	color: var(--txt-color);
+	color: var(--main-txt-color);
 	font-weight: 800;
 }
 main section:nth-of-type(2)>ul{
@@ -314,7 +314,7 @@ main section:nth-of-type(2)>ul{
 /* Styling alle items */
 main section:nth-of-type(2) a {
 	text-decoration: none;
-	color: var(--ltst-nws-txt-color);
+	color: inherit;
 }
 
 /* Gridverdeling alle items */
@@ -326,7 +326,7 @@ main section:nth-of-type(2) article {
 
 /* H3 styling alle items */
 main section:nth-of-type(2) article h3{
-	color: var(--txt-color);
+	color: var(--main-txt-color);
 	font-size: 1.19rem;
 	margin: 0;
 	grid-column-start: 3;
@@ -336,6 +336,7 @@ main section:nth-of-type(2) article h3{
 main section:nth-of-type(2) article p{
 	display: none;
 	font-size: var(--font-size-p);
+	color: var(--scnd-txt-color);
 }
 
 /* Image styling alle items */
@@ -344,13 +345,23 @@ main section:nth-of-type(2) article img {
 	height: 5.63rem;
 	grid-row-start: 1;
 	border-radius: .44rem;
-	box-shadow: .1rem .1rem black;
+	box-shadow: 0px 0px 0px rgba(3, 7, 18, 0.01), /* Bron code van derde: smoothshadows.com */
+			0px 0px 1px rgba(3, 7, 18, 0.02),
+			0px 0px 2px rgba(3, 7, 18, 0.02),
+			0px 0px 4px rgba(3, 7, 18, 0.03),
+			0px 0px 6px rgba(3, 7, 18, 0.04),
+			0px 0px 9px rgba(3, 7, 18, 0.05),
+			0px 0px 12px rgba(3, 7, 18, 0.06),
+			0px 0px 15px rgba(3, 7, 18, 0.06),
+			0px 0px 19px rgba(3, 7, 18, 0.07),
+			0px 0px 24px rgba(3, 7, 18, 0.08);
 }
 
 /* Datum indeling alle items */
 main section:nth-of-type(2) article time {
 	grid-column-start: 3;
 	grid-row-start: 3;
+	color: var(--scnd-txt-color);
 }
 
 /* Gridverdeling overschrijving eerste item */
@@ -362,7 +373,6 @@ main section:nth-of-type(2) li:first-of-type article {
 
 /* H3 overschrijving eerste item */
 main section:nth-of-type(2) li:first-of-type article:first-of-type h3 {
-	color: var(--txt-color);
 	font-size: 1.4rem;
 	grid-column-start: 1;
 }
@@ -380,7 +390,8 @@ main section:nth-of-type(2) li:first-of-type article:first-of-type time {
 
 /* More news button styling */
 main section:nth-of-type(2) ul li:last-of-type a {
-	background-color: var(--wtsn-btn-color);
+	background-color: var(--main-btn-color);
+	color: var(--main-txt-color);
 	padding: 1em 2em;
 	max-width: 100%;
 	border-radius: .7rem;
@@ -388,7 +399,16 @@ main section:nth-of-type(2) ul li:last-of-type a {
 	font-size: 1.12rem;
 	font-weight: 800;
 	opacity: 1;
-	box-shadow: .1rem .1rem black;
+	box-shadow: 0px 0px 0px rgba(3, 7, 18, 0.01), /* Bron code van derde: smoothshadows.com */
+		0px 0px 1px rgba(3, 7, 18, 0.02),
+		0px 0px 2px rgba(3, 7, 18, 0.02),
+		0px 0px 4px rgba(3, 7, 18, 0.03),
+		0px 0px 6px rgba(3, 7, 18, 0.04),
+		0px 0px 9px rgba(3, 7, 18, 0.05),
+		0px 0px 12px rgba(3, 7, 18, 0.06),
+		0px 0px 15px rgba(3, 7, 18, 0.06),
+		0px 0px 19px rgba(3, 7, 18, 0.07),
+		0px 0px 24px rgba(3, 7, 18, 0.08);
 }
 
 
@@ -401,13 +421,13 @@ main section:nth-of-type(3){
 
 main section:nth-of-type(3) h2 {
 	font-size: var(--font-size-h2);
-	color: var(--txt-color);
+	color: var(--main-txt-color);
 	font-weight: 800;
 }
 
 main section:nth-of-type(3)>p {
 	font-size: var(--font-size-p);
-	color: var(--txt-color);
+	color: var(--scnd-txt-color);
 }
 
 /* Grid verdeling van alle items */
@@ -430,7 +450,7 @@ main section:nth-of-type(3) article h3 {
 	grid-column-start: 2;
 	justify-self: center;
 	font-size: var(--font-size-h3);
-	color: var(--txt-color);
+	color: var(--main-txt-color);
 }
 
 /* Indeling en styling alle P's */
@@ -439,7 +459,7 @@ main section:nth-of-type(3) article p {
 	grid-column: 1 / 4;
 	text-align: center;
 	font-size: var(--font-size-p);
-	color: var(--txt-color);
+	color: var(--scnd-txt-color);
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
@@ -450,7 +470,7 @@ main section:nth-of-type(3) article a {
 	grid-column-start: 2;
 	justify-self: center;
 	text-align: center;
-	background-color: var(--wtsn-btn-color);
+	background-color: var(--gtinvlvd-btn-color);
 	color: var(--lrn-mr-btn-color);
 	padding: 1em 2em;
 	width: 11rem;
@@ -466,26 +486,26 @@ main section:nth-of-type(4){
 	padding: 2rem;
 }
 
-main section:nth-of-type(4) ul {
-	list-style-type: "";
-	display: flex;
-	flex-direction: column;
-	justify-content: start;
-	gap: 2rem;	
-	margin: 0;
-	padding: 0;
-}
-
 main section:nth-of-type(4) h2 {
 	font-size: var(--font-size-h2);
-	color: var(--txt-color);
+	color: var(--main-txt-color);
 	font-weight: 800;
 }
 
 main section:nth-of-type(4) h3 {
 	font-size: var(--font-size-spnsr-h3);
-	color: var(--txt-color);
+	color: var(--main-txt-color);
 	font-weight: 400;
+}
+
+main section:nth-of-type(4) ul {
+	list-style-type: "";
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	gap: 2rem;
+	margin: 0;
+	padding: 0;
 }
 
 main section:nth-of-type(4) a:has(img) {
@@ -524,8 +544,8 @@ main section:nth-of-type(4) p a {
 }
 
 main section:nth-of-type(4)>a:last-of-type {
-	background-color: var(--wtsn-btn-color);
-	color: var(--txt-color);
+	background-color: var(--main-btn-color);
+	color: var(--main-txt-color);
 	padding: 1em 2em;
 	max-width: 100%;
 	border-radius: .7rem;
@@ -533,7 +553,16 @@ main section:nth-of-type(4)>a:last-of-type {
 	font-size: 1.12rem;
 	font-weight: 800;
 	opacity: 1;
-	box-shadow: .01rem .01rem black;
+	box-shadow: 0px 0px 0px rgba(3, 7, 18, 0.01), /* Bron code van derde: smoothshadows.com */
+			0px 0px 1px rgba(3, 7, 18, 0.02),
+			0px 0px 2px rgba(3, 7, 18, 0.02),
+			0px 0px 4px rgba(3, 7, 18, 0.03),
+			0px 0px 6px rgba(3, 7, 18, 0.04),
+			0px 0px 9px rgba(3, 7, 18, 0.05),
+			0px 0px 12px rgba(3, 7, 18, 0.06),
+			0px 0px 15px rgba(3, 7, 18, 0.06),
+			0px 0px 19px rgba(3, 7, 18, 0.07),
+			0px 0px 24px rgba(3, 7, 18, 0.08);
 }
 
 
@@ -554,7 +583,7 @@ footer ul {
 }
 
 footer h2 {
-	color: var(--txt-color);
+	color: var(--ftr-bg-txt-color);
 	font-size: var(--font-size-h3);
 	font-weight: 800;
 }

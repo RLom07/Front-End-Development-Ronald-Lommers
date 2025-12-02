@@ -312,6 +312,9 @@ samen met je groepje opstellen
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
+Ronald:
+Er zit padding aan de randen van de website na een schermgrootte van 1250px, hoe kan ik deze ook aanhouden responsive
+
 ### Verslag van meeting
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -351,6 +354,7 @@ W3Schools
 UNA
 MDN
 GODOT
+smoothshadows.com
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
