@@ -210,7 +210,8 @@ main section:first-of-type>a:first-of-type {
 	grid-row-start: 5;
 	justify-self: center;
 
-	display: flex;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
 	align-items: stretch;
 
 	background: #ffff;
@@ -219,31 +220,22 @@ main section:first-of-type>a:first-of-type {
 	font-weight: 800;
 	text-decoration: none;
 	text-align: center;
+	align-items: center;
 	width: fit-content;
 	max-width: 100%;
 	box-shadow: .01rem .01rem black;
 }
 
-/* Download latest button styling witte gedeelte */
-main section:first-of-type>a:first-of-type span:first-of-type {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 1rem 1.2rem;
-	white-space: normal;
-	text-align: center;
-}
-
 /* Download latest button styling blauwe gedeelte */
-main section:first-of-type>a:first-of-type span:nth-of-type(2) {
+main section:first-of-type>a:first-of-type em {
 	background: var(--ltst-btn-color);
 	color: var(--color-white);
-	padding: 1rem 1rem;
-	border-radius: 0 .93rem .93rem 0;
+	padding: 1.2rem 1rem;
+	border-radius: 0 .6rem .6rem 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height: 100%;
 }
 
 /* Styling what's new button */
@@ -258,6 +250,7 @@ main section:first-of-type>a:nth-of-type(2) {
 	border-radius: .93rem;
 	color: var(--color-white);
 	text-decoration: none;
+	text-align: center;
 	font-size: 1.12rem;
 	font-weight: 800;
 	opacity: 1;
