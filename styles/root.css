@@ -1,0 +1,396 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-VariableFont_wght.woff2);
+}
+
+
+/* Bron hulp light dark mode: MDN light-dark() */
+
+:root{
+
+    color-scheme: light dark;
+
+    --main-bg-color: light-dark(#EFF1F5, #25282b);
+    --main-txt-color: light-dark(#546B99, #FFFF); 
+    --scnd-txt-color: light-dark(#4A5365, #FFFFFFE6);
+    --main-btn-color: light-dark(#FFFF, #333639);
+    --gtinvlvd-btn-color: #6F6F6F45;
+    --lrn-mr-btn-color: light-dark(#12597F, #85C2E0);
+    --color-white: #ffff;
+    --thrd-txt-color: #989A9B;
+    --lnk-txt-color: #668FA0;
+    --spnsr-btn-color: #FFFFFF;
+    --dn-btn-color: #F35774;
+    --dwnl-btn-txt-color: #263256;
+    --ltst-btn-color: #2e8adf;
+    --wtsn-btn-color: rgba(122, 121, 125, 0.5);
+    --auth-bckg-color: #1a1a1a7a;
+    --ltst-nws-txt-color: #FFFFFFE6;
+    --ftr-bg-txt-color: (#2C2C2C, #FFFFFF);
+    --ftr-txt-color: light-dark(#2C2C2C, #898989);
+    --ftr-color: light-dark(#ffff, #111111);
+    --hmb-mnu-bckgrnd-color: #333639;
+    --font-size-p: 1.125rem;
+    --font-size-h2: 2.25rem;
+    --font-size-h3: 1.375rem;
+    --font-size-spnsr-h3: 1.75rem;
+}
+
+
+/* HEADER */
+
+header {
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+}
+
+/* Logo */
+header>a:first-of-type img {
+    width: 8.5rem;
+    height: 3rem;
+}
+
+header>a:first-of-type img:hover {
+    filter: brightness(120%);
+    /* Hulp bron: W3schools */
+}
+
+header nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--hmb-mnu-bckgrnd-color);
+    padding: 1rem 1.5rem;
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* menu open */
+header nav[data-open="true"] {
+    display: block;
+}
+
+/* beide UL's onder elkaar */
+header nav ul {
+    list-style-type: "";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Spacing tussen hamburger menu elementen */
+header nav ul+ul {
+    margin-top: 2rem;
+}
+
+/* Styling hamburger menu items */
+header nav ul li a {
+    text-decoration: none;
+    color: var(--color-white);
+    padding: 1rem;
+}
+
+select {
+    display: none;
+}
+
+/* taal veranderen */
+header>img:nth-of-type(1) {
+    display: none;
+}
+
+/* Donate button */
+header>a:nth-of-type(2) {
+    color: var(--color-white);
+    text-decoration: none;
+    background-color: var(--dn-btn-color);
+    padding: .8rem 1.2rem;
+    border-radius: .63rem;
+
+    display: inline-flex;
+    justify-self: flex-end;
+    align-items: center;
+    gap: .5rem;
+}
+
+header>a:nth-of-type(2):hover {
+    background-color: #FF6688;
+}
+
+/* Hartje in Donate Knop */
+header>a:nth-of-type(2) img {
+    width: .81rem;
+    height: auto;
+}
+
+/* Styling van de knop om het hamburger menu icoontje heen*/
+header button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+}
+
+/* 3 spans die het icoontje van het hamberger menu maken */
+header button span {
+    width: 2rem;
+    height: .2rem;
+    background: white;
+    border-radius: 99rem;
+    transition: transform .3s ease, opacity .1s;
+    /* Hulp bron: Mdn transition */
+}
+
+/* Animatie */
+
+/* Hulp bron: Mdn transform */
+
+/* Als er word geklikt word deze span (Streepje) 45 grade gedraaid en een klein stukje naar beneden geduwd zodat deze goed aansluit */
+header button[aria-expanded="true"] span:nth-of-type(1) {
+    transform: translateY(.5rem) rotate(45deg);
+}
+
+/* Als er word geklikt verdwijnt de middelste span (streepje) */
+header button[aria-expanded="true"] span:nth-of-type(2) {
+    opacity: 0;
+}
+
+/* Als er word geklikt word deze span (Streepje) -45 grade gedraaid en een klein stukje naar boven geduwd zodat deze goed aansluit */
+header button[aria-expanded="true"] span:nth-of-type(3) {
+    transform: translateY(-.5rem) rotate(-45deg);
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--ftr-color);
+    padding: 2rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    list-style-type: "";
+    margin: 0;
+    padding: 0;
+}
+
+footer h2 {
+    color: var(--ftr-bg-txt-color);
+    font-size: var(--font-size-h3);
+    font-weight: 800;
+}
+
+footer ul a {
+    color: var(--ftr-txt-color);
+    text-decoration: none;
+}
+
+footer hr {
+    border: none;
+    border-top: 0.5px solid gray;
+}
+
+footer section:nth-of-type(5) p {
+    color: var(--ftr-txt-color);
+    text-align: center;
+    font-size: var(--font-size-p);
+}
+
+footer section:nth-of-type(5) p a {
+    color: var(--ftr-txt-color);
+}
+
+footer section:last-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .6rem;
+}
+
+footer section a {
+    fill: grey;
+    width: 2rem;
+    height: 2rem;
+}
+
+@media (min-width: 500px) {
+    header {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    /* FOOTER */
+    
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr .5fr .5fr;
+    }
+
+    footer section:first-of-type {
+        grid-column-start: 1;
+    }
+
+    footer section:nth-of-type(2) {
+        grid-column-start: 2;
+        justify-self: center;
+    }
+
+    footer section:nth-of-type(3) {
+        grid-column-start: 3;
+        justify-self: center;
+    }
+
+    footer section:nth-of-type(4) {
+        grid-column-start: 4;
+        justify-self: end;
+    }
+
+    footer hr {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        width: 100%;
+        align-self: center;
+    }
+
+    footer section:nth-of-type(5) {
+        grid-row-start: 3;
+        grid-column: 1 / 3;
+        justify-self: start;
+    }
+
+    footer section:nth-of-type(5) p {
+        text-align: start;
+    }
+
+    footer section:last-of-type {
+        grid-row-start: 3;
+        grid-column-start: 4;
+        justify-self: end;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* HEADER */
+        
+    header nav {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        background: none;
+    }
+
+    /* Alle nav items in header */
+    header nav ul {
+        display: block;
+        list-style-type: "";
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: .1rem;
+    }
+
+    header nav ul+ul {
+        margin-top: 0;
+    }
+
+    header nav ul li a:hover {
+        background-color: #ffffff1a;
+    }
+
+    /* taal veranderen */
+    header>img:nth-of-type(1) {
+        display: block;
+        width: auto;
+        height: 2.49rem;
+        align-self: center;
+    }
+
+
+
+    /* Bron: UNA */
+    select,
+    ::picker(select) {
+        appearance: base-select;
+    }
+
+    ::picker(select) {
+        translate: 25.5rem;
+        border-radius: 10px;
+        background-color: #00000099;
+        border-color: gray;
+        color: var(--txt-color);
+        width: 8rem;
+    }
+
+    select {
+        display: block;
+        position: absolute;
+        translate: 29.5rem;
+        border: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    ::picker-icon {
+        display: none;
+    }
+
+    ::checkmark {
+        display: none;
+    }
+
+    option {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        text-align: center;
+        display: block;
+    }
+
+    /* Hamburger Menu Icon */
+    header button {
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) {
+    header {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    footer {
+        padding-left: 10rem;
+        padding-right: 13rem;
+    }
+}
