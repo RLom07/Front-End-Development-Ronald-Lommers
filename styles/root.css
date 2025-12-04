@@ -302,6 +302,14 @@ footer ul a:hover {
     color: var(--ftr-hover-color);
 }
 
+footer ul a:focus {
+    outline: var(--focus-size) solid var(--blue-focus);
+}
+
+footer ul a:active {
+    color: var(--lnk-active-color);
+}
+
 /* Streep in de footer */
 footer hr {
     border: none;
@@ -329,6 +337,14 @@ footer section:nth-of-type(5) p a:hover {
     color: var(--ftr-hover-color);
 }
 
+footer section:nth-of-type(5) p a:focus {
+    outline: var(--focus-size) solid var(--blue-focus);
+}
+
+footer section:nth-of-type(5) p a:active {
+    color: var(--lnk-active-color);
+}
+
 /* Section met iconen in de footer */
 footer section:last-of-type {
     display: flex;
@@ -339,14 +355,22 @@ footer section:last-of-type {
 }
 
 /* Iconen in de footer */
-footer section a {
+footer section:last-of-type a {
     fill: var(--color-gray);
     width: 2rem;
     height: 2rem;
 }
 
-footer section a:hover {
+footer section:last-of-type a:hover {
     fill: var(--ftr-hover-color);
+}
+
+footer section:last-of-type a:focus {
+    outline: var(--focus-size) solid var(--blue-focus);
+}
+
+footer section:last-of-type a:active {
+    fill: var(--lnk-active-color);
 }
 
 @media (min-width: 500px) {
