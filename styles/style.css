@@ -45,6 +45,7 @@ main section:first-of-type h1 {
 	text-align: center;
 	grid-column: 1 / 5;
 	grid-row-start: 2;
+	font-weight: var(--font-weight-h);
 }
 
 main section:first-of-type p:first-of-type {
@@ -52,7 +53,7 @@ main section:first-of-type p:first-of-type {
 	grid-row: 3 / 4;
 	text-align: center;
 	color: var(--color-white);
-	font-size: 1.25rem;
+	font-size: var(--font-size-p);
 }
 
 /* Download latest button algemene styling */
@@ -68,7 +69,7 @@ main section:first-of-type>a:first-of-type {
 	background: var(--color-white);
 	color: var(--dwnl-btn-txt-color);
 	border-radius: .94rem;
-	font-weight: 800;
+	font-weight: var(--font-weight-btns);
 	text-decoration: none;
 	text-align: center;
 	align-items: center;
@@ -91,8 +92,7 @@ main section:first-of-type>a:first-of-type:hover{
 }
 
 main section:first-of-type>a:first-of-type:focus {
-	outline: none;
-	border: .2rem solid var(--color-white);
+	outline: var(--focus-size) solid var(--color-white);
 }
 
 /* Download latest button styling blauwe gedeelte */
@@ -121,7 +121,7 @@ main section:first-of-type>a:nth-of-type(2) {
 	text-decoration: none;
 	text-align: center;
 	font-size: 1.12rem;
-	font-weight: 800;
+	font-weight: var(--font-weight-btns);
 	opacity: 1;
 	box-shadow: 0px 0px 0px rgba(3, 7, 18, 0.01), /* Bron code van derde: smoothshadows.com */
 			0px 0px 1px rgba(3, 7, 18, 0.02),
@@ -140,8 +140,7 @@ main section:first-of-type>a:nth-of-type(2):hover {
 }
 
 main section:first-of-type>a:nth-of-type(2):focus {
-	outline: none;
-	border: .2rem solid var(--color-white);
+	outline: var(--focus-size) solid var(--color-white);
 }
 
 /* Looking for Godot 3 etc tekst algemene styling */
@@ -151,7 +150,7 @@ main section:first-of-type p:nth-of-type(2) {
 	justify-self: center;
 	text-align: center;
 	color: var(--color-white);
-	font-size: .93rem;
+	font-size: var(--font-size-p);
 }
 
 /* Looking for Godot 3 etc link styling */
@@ -163,13 +162,17 @@ main section:first-of-type p:nth-of-type(2) a:hover {
 	color: var(--a-lnks-hover-color);
 }
 
+main section:first-of-type p:nth-of-type(2) a:focus {
+	outline: var(--focus-size) solid var(--color-white);
+}
+
 /* Author of background image styling (Polychroma) */
 main section:first-of-type>a:nth-of-type(3) {
 	grid-column: 2 / 4;
 	grid-row-start: 10;
 	justify-self: center;
 	color: var(--color-white);
-	font-size: .93rem;
+	font-size: var(--font-size-p);
 	background-color: var(--auth-bckg-color);
 
 	display: flex;
@@ -181,12 +184,20 @@ main section:first-of-type>a:nth-of-type(3) {
 	cursor: pointer;
 }
 
+main section:first-of-type>a:nth-of-type(3):hover {
+	background-color: var(--auth-bckgrnd-hover-color);
+}
+
+main section:first-of-type>a:nth-of-type(3):focus {
+	outline: var(--focus-size) solid var(--color-white);
+}
+
 /* SECTION 2 */
 
 main section:nth-of-type(2) h2{
 	font-size: var(--font-size-h2);
 	color: var(--main-txt-color);
-	font-weight: 800;
+	font-weight: var(--font-weight-h);
 }
 
 main section:nth-of-type(2)>ul{
@@ -201,10 +212,15 @@ main section:nth-of-type(2)>ul{
 main section:nth-of-type(2) a {
 	text-decoration: none;
 	color: inherit;
+	display: inline-block;
 }
 
 main section:nth-of-type(2) a:hover {
 	filter: brightness(var(--hover-brightness-brighter));
+}
+
+main section:nth-of-type(2) a:focus {
+	outline: var(--focus-size) solid var(--blue-focus);
 }
 
 /* Gridverdeling alle items */
@@ -220,6 +236,7 @@ main section:nth-of-type(2) article h3{
 	font-size: 1.19rem;
 	margin: 0;
 	grid-column-start: 3;
+	font-weight: var(--font-weight-h);
 }
 
 /* P styling alle items */
@@ -287,7 +304,7 @@ main section:nth-of-type(2) ul li:last-of-type a {
 	border-radius: .7rem;
 	text-decoration: none;
 	font-size: 1.12rem;
-	font-weight: 800;
+	font-weight: var(--font-weight-btns);
 	opacity: 1;
 	box-shadow: 0px 0px 0px rgba(3, 7, 18, 0.01), /* Bron code van derde: smoothshadows.com */
 		0px 0px 1px rgba(3, 7, 18, 0.02),
@@ -301,6 +318,9 @@ main section:nth-of-type(2) ul li:last-of-type a {
 		0px 0px 24px rgba(3, 7, 18, 0.08);
 }
 
+main section:nth-of-type(2) ul li:last-of-type a:focus {
+	outline: var(--focus-size) solid var(--blue-focus);
+}
 
 /* SECTION 3 */
 
@@ -312,7 +332,7 @@ main section:nth-of-type(3){
 main section:nth-of-type(3) h2 {
 	font-size: var(--font-size-h2);
 	color: var(--main-txt-color);
-	font-weight: 800;
+	font-weight: var(--font-weight-h);
 }
 
 main section:nth-of-type(3)>p {
@@ -340,6 +360,7 @@ main section:nth-of-type(3) article h3 {
 	grid-column-start: 2;
 	justify-self: center;
 	font-size: var(--font-size-h3);
+	font-weight: var(--font-weight-h);
 	color: var(--main-txt-color);
 }
 
@@ -368,7 +389,7 @@ main section:nth-of-type(3) article a {
 	max-height: 3.2rem;
 	border-radius: .7rem;
 	text-decoration: none;
-	font-weight: 800;
+	font-weight: var(--font-weight-btns);
 	box-shadow: 0px 0px 0px rgba(3, 7, 18, 0.01), /* Bron code van derde: smoothshadows.com */
 				0px 0px 1px rgba(3, 7, 18, 0.02),
 				0px 0px 2px rgba(3, 7, 18, 0.02),
@@ -385,6 +406,10 @@ main section:nth-of-type(3) article a:hover {
 	filter: brightness(var(--hover-brightness-brighter));
 }
 
+main section:nth-of-type(3) article a:focus {
+	outline: var(--focus-size) solid var(--color-white);
+}
+
 
 /* SECTION 4 */
 
@@ -396,7 +421,7 @@ main section:nth-of-type(4){
 main section:nth-of-type(4) h2 {
 	font-size: var(--font-size-h2);
 	color: var(--main-txt-color);
-	font-weight: 800;
+	font-weight: var(--font-weight-h);
 }
 
 main section:nth-of-type(4) h3 {
@@ -418,7 +443,7 @@ main section:nth-of-type(4) ul {
 
 /* Alle linkjes met logo op de pagina */
 main section:nth-of-type(4) a:has(img) {
-	display: flex;
+	display: inline-flex;
 	padding: 1rem;
 	border-radius: .5rem;
 	background: var(--spnsr-btn-color);
@@ -438,6 +463,10 @@ main section:nth-of-type(4) a:has(img) {
 
 main section:nth-of-type(4) a:has(img):hover {
 	filter: brightness(var(--hover-brightness-brighter));
+}
+
+main section:nth-of-type(4) a:has(img):focus {
+	outline: var(--focus-size) solid var(--blue-focus);
 }
 
 /* Logo van Patron sponsoren */
@@ -485,7 +514,7 @@ main section:nth-of-type(4)>a:last-of-type {
 	border-radius: .7rem;
 	text-decoration: none;
 	font-size: 1.12rem;
-	font-weight: 800;
+	font-weight: var(--font-weight-btns);
 	opacity: 1;
 	box-shadow: 0px 0px 0px rgba(3, 7, 18, 0.01), /* Bron code van derde: smoothshadows.com */
 			0px 0px 1px rgba(3, 7, 18, 0.02),
@@ -644,6 +673,10 @@ main section:nth-of-type(4)>a:last-of-type:hover {
 
 	main section:nth-of-type(2) li:first-of-type {
 		grid-row: 1 / 4;
+	}
+
+	main section:nth-of-type(2) article {
+		padding-right: 3rem;
 	}
 
 	/* Image styling overschrijving eerste item */

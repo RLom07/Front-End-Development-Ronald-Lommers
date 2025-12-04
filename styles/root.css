@@ -3,6 +3,11 @@
     src: url(../fonts/Montserrat-VariableFont_wght.woff2);
 }
 
+@font-face {
+    font-family: "Godot-woff";
+    src: url(../fonts/godot.woff2);
+}
+
 /* Code van derde: a11yproject.com How to hide content */
 .visually-hidden {
     clip: rect(0 0 0 0);
@@ -57,16 +62,27 @@
     --ftr-hover-color: #7AB1C5;
     --slct-hover-color: #ffffff1a;
     --lnk-txt-hover-color: #81B9D0;
+    --auth-bckgrnd-hover-color: #212121;
 
     /* Hover Brightness */
     --hover-brightness: 120%;
     --hover-brightness-brighter: 130%;
+
+    /* Focus Colors */
+    --blue-focus: #7AB1C5;
+
+    /* Focus Size */
+    --focus-size: .2rem;
 
     /* Font-sizes */
     --font-size-p: 1.125rem;
     --font-size-h2: 2.25rem;
     --font-size-h3: 1.375rem;
     --font-size-spnsr-h3: 1.75rem;
+
+    /* Font-Weights */
+    --font-weight-btns: 900;
+    --font-weight-h: 800;
 
 }
 
@@ -107,8 +123,7 @@ header>a:nth-last-of-type(2) img:hover {
 
 header>a:nth-last-of-type(2):focus {
     /* Hulp bron: MDN :Focus */
-    outline: none;
-    border: .2rem solid var(--ltst-btn-color);
+    outline: var(--focus-size) solid var(--blue-focus);
 }
 
 header nav {
@@ -170,8 +185,7 @@ header>a:nth-of-type(3):hover {
 }
 
 header>a:nth-of-type(3):focus {
-    outline: none;
-    border: .2rem solid var(--color-white);
+    outline: var(--focus-size) solid var(--color-white);
 }
 
 /* Hartje in Donate Knop */
@@ -248,7 +262,7 @@ footer ul {
 footer h2 {
     color: var(--ftr-bg-txt-color);
     font-size: var(--font-size-h3);
-    font-weight: 800;
+    font-weight: var(--font-weight-h);
 }
 
 /* Styling linkjes */
@@ -402,8 +416,7 @@ footer section a:hover {
 
     header nav ul li a:focus {
         /* Hulp bron: MDN :Focus */
-        outline: none;
-        border: .2rem solid var(--color-white);
+        outline: var(--focus-size) solid var(--color-white);
     }
 
 
@@ -444,8 +457,7 @@ footer section a:hover {
     }
 
     select:focus {
-        outline: none;
-        border: .2rem solid var(--color-black);
+        outline: var(--focus-size) solid var(--color-black);
     }
     
     select::picker-icon {
