@@ -74,6 +74,8 @@ Geeft in de header eerst duidelijk aan dat het in de header is en vervolgens dat
 
 Begin:
 Geeft duidelijk H1 aan
+<img src="readme-images/H1Godot.png" width="375px" alt="">
+
 Geeft duidelijk alle links aan
 Geen alt tekst voor het achtergrond plaatje
 
@@ -111,13 +113,17 @@ Hight contrast mode word ondersteund
 Slecht:
 De homepage heeft geen titel waardoor dat niet te lezen is door screen readers
 Bij het valideren van de HTML kwamen er 4 errors en 3 waarschuwingen aan het licht
+<img src="readme-images/W3CValidator Godot.png" width="375px" alt="">
+
 De ruimte tussen bepaalde interactieve elementen is te weinig
+<img src="readme-images/elementen.png" width="375px" alt="">
+
 Er word bijna overal gebruik gemaakt van DIV's in plaats van OL, UL of DL elementen
+<img src="readme-images/Godots Code.png" width="375px" alt="">
+
 Bij geen van de foto's op de website word alt tekst gebruikt
-Veel links zien eruit als knoppen
 Niet klikbare elementen hebben ook een focus state
 Er is geen skip link aanwezig in de website
-Er is geen Light mode
 
 </details>
 
@@ -139,6 +145,8 @@ Er is geen Light mode
   <img src="readme-images/breakdownschets2.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
   <img src="readme-images/breakdownschets3.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
+  <img src="readme-images/hamburgermenu-breakdownschets.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 ### de Tweede pagina:
 
