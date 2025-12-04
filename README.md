@@ -217,10 +217,10 @@ Hoe nu verder?
 Ik zal aankomende week nog meer gas geven en meer hulp vragen bij dingen waar ik vast loop, nu ik grid en flex redelijk onder de knie heb en wat comfortabeler ben met responsiveness denk ik als ik er meer tijd in stop en vragen stel bij vast lopen dit tot een goed resultaat kan leiden.
 
 Screenshot Mobile:
-<img src="readme-images/Voortgang week 3 mobile.png" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="readme-images/Voortgang week 3 mobile.png" width="375px" alt="">
 
 Screenshot Desktop:
-<img src="readme-images/Voortgang week 3 Desktop.png" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="readme-images/Voortgang week 3 Desktop.png" width="375px" alt="">
 
 ### Agenda voor meeting
 
@@ -291,6 +291,55 @@ bij ::after moet er content: "" zijn maar deze zou leeg mogen blijven
 
 Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+Content:
+Voor screen readers moeten text bij buttons nog beter
+
+Global Code:
+Bij het valideren van de HTML Kwamen er helaas verschillende errors naar voren
+
+<img src="readme-images/W3C Validator.png" width="375px" alt="">
+
+Verbeterpunt:
+Tenopzichte van de orginele website van Godot gebruikt mijn website per pagina een duidelijke titel
+
+Keyboard:
+Focus Visible is bij een groot deel van de elementen nog niet geimplementeerd
+
+Mobile and Touch:
+De ruimte tussen elementen bijvoorbeeld bij de footer kan beter
+
+<img src="readme-images/footer.png" width="375px" alt="">
+
+Lists:
+
+Verbetering:
+In tegenstelling tot de orginele website van Godot waar bijna alleen maar Divs gebruikt werd maakt mijn website veel gebruik van Lists
+
+Images:
+Verbetering:
+
+1. In tegenstelling tot de orginele website van godot hebben alle images in mijn website (Met uitzondering van Decoratieve images) allemaal alt tekst
+2. In tegenstelling tot de orginele website van Godot heeft mijn website in de waar er tekst in een afbeeldig staat dit ook in de alt tekst staan
+
+Controls:
+Nog niet alle elementen hebben een focus state
+Er is nog geen skip link in mijn website
+Links die in een nieuw tab komen zijn nog niet geidentificeerd
+
+Verbetering:
+In tegenstelling tot de orginele website van godot hebben alle buttons in mijn website ook echt een button tag
+
+Appreance:
+Mijn website support momenteel nog geen high contrast mode
+
+Animation:
+Een prefers-reduced-motion moet nog worden geimplementeerd
+
+Color contrast:
+Bij 2 linkjes onderaan is het contrast net niet genoeg
+
+<img src="readme-images/kleurcontrast.png" width="375px" alt="">
+
 </details>
 
 ## Voortgang 3 (week 4)
@@ -358,14 +407,18 @@ Korte omschrijving met plaatjes
 
 ## Bronnenlijst
 
-W3Schools
-UNA
-MDN
+UNA Select
 GODOT
 smoothshadows.com
-Sanne T Hoofd
 Tijn Hollander
-A11y
+a11yproject.com
+MDN light-dark()
+W3schools Filter
+MDN :Focus
+W3schools :Outline
+MDN :Outline
+MDN transform
+Mathijs Studentassistent
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>

@@ -58,7 +58,7 @@
 
     /* Hover Colours */
     --dnte-btn-hover-color: #FF6688;
-    --a-lnks-hover-color: #878B92;
+    --a-lnks-hover-color: #CFCFCF;
     --ftr-hover-color: #7AB1C5;
     --slct-hover-color: #ffffff1a;
     --lnk-txt-hover-color: #81B9D0;
@@ -73,6 +73,15 @@
 
     /* Focus Size */
     --focus-size: .2rem;
+
+    /* Active Colors */
+    --dnte-btn-active-color: #C23E5C;
+    --a-active-color: #6B6B6B;
+    --aut-backgrnd-active-color: #0F0F0F;
+    --lnk-active-color: #4C6773;
+
+    /* Active Brightness */
+    --active-brightness: 50%;
 
     /* Font-sizes */
     --font-size-p: 1.125rem;
@@ -118,12 +127,16 @@ header>a:nth-last-of-type(2) img {
 
 header>a:nth-last-of-type(2) img:hover {
     filter: brightness(var(--hover-brightness));
-    /* Hulp bron: W3schools */
+    /* Hulp bron: W3schools Filter */
 }
 
 header>a:nth-last-of-type(2):focus {
     /* Hulp bron: MDN :Focus */
     outline: var(--focus-size) solid var(--blue-focus);
+}
+
+header>a:nth-last-of-type(2):active {
+    filter: brightness(var(--active-brightness));
 }
 
 header nav {
@@ -161,6 +174,16 @@ header nav ul li a {
     padding: 1rem;
 }
 
+header nav ul li a:hover {
+    background-color: #ffffff1a;
+}
+
+header nav ul li a:focus {
+    /* Hulp bron: MDN :Focus */
+    /* Hulp bron: W3schools :Outline */
+    outline: var(--focus-size) solid var(--color-white);
+}
+
 /* Taal selectie menu */
 select {
     display: none;
@@ -186,6 +209,10 @@ header>a:nth-of-type(3):hover {
 
 header>a:nth-of-type(3):focus {
     outline: var(--focus-size) solid var(--color-white);
+}
+
+header>a:nth-of-type(3):active {
+    background-color: var(--dnte-btn-active-color);
 }
 
 /* Hartje in Donate Knop */
@@ -409,16 +436,6 @@ footer section a:hover {
         padding: 0;
         gap: .1rem;
     }
-
-    header nav ul li a:hover {
-        background-color: #ffffff1a;
-    }
-
-    header nav ul li a:focus {
-        /* Hulp bron: MDN :Focus */
-        outline: var(--focus-size) solid var(--color-white);
-    }
-
 
     /* Bron: UNA */
     /* Hulp gekregen van: Sanne T Hoofd */

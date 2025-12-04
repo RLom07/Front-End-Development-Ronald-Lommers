@@ -95,6 +95,10 @@ main section:first-of-type>a:first-of-type:focus {
 	outline: var(--focus-size) solid var(--color-white);
 }
 
+main section:first-of-type>a:first-of-type:active {
+	filter: brightness(var(--active-brightness));
+}
+
 /* Download latest button styling blauwe gedeelte */
 main section:first-of-type>a:first-of-type em {
 	background: var(--ltst-btn-color);
@@ -143,6 +147,10 @@ main section:first-of-type>a:nth-of-type(2):focus {
 	outline: var(--focus-size) solid var(--color-white);
 }
 
+main section:first-of-type>a:nth-of-type(2):active {
+	filter: brightness(var(--active-brightness));
+}
+
 /* Looking for Godot 3 etc tekst algemene styling */
 main section:first-of-type p:nth-of-type(2) {
 	grid-column: 1 / 5;
@@ -164,6 +172,10 @@ main section:first-of-type p:nth-of-type(2) a:hover {
 
 main section:first-of-type p:nth-of-type(2) a:focus {
 	outline: var(--focus-size) solid var(--color-white);
+}
+
+main section:first-of-type p:nth-of-type(2) a:active {
+	color: var(--a-active-color);
 }
 
 /* Author of background image styling (Polychroma) */
@@ -192,6 +204,10 @@ main section:first-of-type>a:nth-of-type(3):focus {
 	outline: var(--focus-size) solid var(--color-white);
 }
 
+main section:first-of-type>a:nth-of-type(3):active {
+	background-color: var(--aut-backgrnd-active-color);
+}
+
 /* SECTION 2 */
 
 main section:nth-of-type(2) h2{
@@ -203,6 +219,7 @@ main section:nth-of-type(2) h2{
 main section:nth-of-type(2)>ul{
 	display: grid;
 	grid-template-rows: auto .5fr 1fr 1fr;
+	gap: 3rem;
 	list-style-type: "";
 	padding: .5rem;
 	margin: 0;
@@ -223,11 +240,16 @@ main section:nth-of-type(2) a:focus {
 	outline: var(--focus-size) solid var(--blue-focus);
 }
 
+main section:nth-of-type(2) a:active {
+	filter: brightness(var(--active-brightness));
+}
+
 /* Gridverdeling alle items */
 main section:nth-of-type(2) article {
 	display: grid;
-	grid-template-columns: 1fr .1fr 2fr;
-	grid-template-rows: 1fr .2fr 1fr;
+	grid-template-columns: auto 1fr;
+	column-gap: 1.5rem;
+	align-items: start;
 }
 
 /* H3 styling alle items */
@@ -410,6 +432,10 @@ main section:nth-of-type(3) article a:focus {
 	outline: var(--focus-size) solid var(--color-white);
 }
 
+main section:nth-of-type(3) article a:active {
+	filter: brightness(var(--active-brightness));
+}
+
 
 /* SECTION 4 */
 
@@ -469,6 +495,10 @@ main section:nth-of-type(4) a:has(img):focus {
 	outline: var(--focus-size) solid var(--blue-focus);
 }
 
+main section:nth-of-type(4) a:has(img):active {
+	filter: brightness(var(--active-brightness));
+}
+
 /* Logo van Patron sponsoren */
 main section:nth-of-type(4)>a:first-of-type img {
 	max-width: 90%;
@@ -505,6 +535,14 @@ main section:nth-of-type(4) p a:hover {
 	color: var(--lnk-txt-hover-color);
 }
 
+main section:nth-of-type(4) p a:focus {
+	outline: var(--focus-size) solid var(--blue-focus);
+}
+
+main section:nth-of-type(4) p a:active {
+	color: var(--lnk-active-color);
+}
+
 /* Donate Knop */
 main section:nth-of-type(4)>a:last-of-type {
 	background-color: var(--main-btn-color);
@@ -532,13 +570,21 @@ main section:nth-of-type(4)>a:last-of-type:hover {
 	filter: brightness(var(--hover-brightness-brighter));
 }
 
+main section:nth-of-type(4)>a:last-of-type:focus {
+	outline: var(--focus-size) solid var(--blue-focus);
+}
+
+main section:nth-of-type(4)>a:last-of-type:active {
+	filter: brightness(var(--active-brightness));
+}
+
 @media (min-width: 500px) {
 
 	/* SECTION 2 */
 
  	/* Gridverdeling alle items */
 	main section:nth-of-type(2) article {
-		grid-template-columns: .5fr 1fr;
+		grid-template-columns: auto 1fr;
 		grid-template-rows: .1fr .1fr .1fr;
 		grid-row-start: 1;
 		grid-column-start: 2;
@@ -546,12 +592,12 @@ main section:nth-of-type(4)>a:last-of-type:hover {
 
 	/* H3 styling alle items */
 	main section:nth-of-type(2) article h3 {
-		grid-column: 2 / 4;
+		grid-column-start: 2;
 	}
 
 	/* Datum indeling alle items */
 	main section:nth-of-type(2) article time {
-		grid-column: 2 / 4;
+		grid-column-start: 2;
 	}
 }
 
@@ -669,14 +715,11 @@ main section:nth-of-type(4)>a:last-of-type:hover {
 	main section:nth-of-type(2) ul {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
+		grid-column-gap: 3rem;
 	}
 
 	main section:nth-of-type(2) li:first-of-type {
 		grid-row: 1 / 4;
-	}
-
-	main section:nth-of-type(2) article {
-		padding-right: 3rem;
 	}
 
 	/* Image styling overschrijving eerste item */
@@ -718,23 +761,10 @@ main section:nth-of-type(4)>a:last-of-type:hover {
 @media (min-width: 1200px) {
 
 	/* SECTION 2 */
-	
-	main section:nth-of-type(2) ul {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
-	}
 
 
 	main section:nth-of-type(2) {
 		padding: 1rem;
-	}
-
-	/* Gridverdeling alle items */
-	main section:nth-of-type(2) article {
-		grid-template-columns: .5fr 1fr;
-		grid-template-rows: .1fr .1fr .1fr;
-		grid-row-start: 1;
-		grid-column-start: 2;
 	}
 
 	/* H3 styling alle items */
