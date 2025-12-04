@@ -352,6 +352,7 @@ main section:nth-of-type(3) article p {
 	color: var(--scnd-txt-color);
 	padding-left: 1rem;
 	padding-right: 1rem;
+	line-height: 2rem;
 }
 
 /* Indeling en styling alle Learn More linkjes */
@@ -364,6 +365,7 @@ main section:nth-of-type(3) article a {
 	color: var(--lrn-mr-btn-color);
 	padding: 1em 2em;
 	width: 11rem;
+	max-height: 3.2rem;
 	border-radius: .7rem;
 	text-decoration: none;
 	font-weight: 800;
@@ -386,6 +388,7 @@ main section:nth-of-type(3) article a:hover {
 
 /* SECTION 4 */
 
+/* Padding voor de gehele section */
 main section:nth-of-type(4){
 	padding: 2rem;
 }
@@ -402,6 +405,7 @@ main section:nth-of-type(4) h3 {
 	font-weight: 400;
 }
 
+/* Alle lijsten in de section */
 main section:nth-of-type(4) ul {
 	list-style-type: "";
 	display: flex;
@@ -412,6 +416,7 @@ main section:nth-of-type(4) ul {
 	padding: 0;
 }
 
+/* Alle linkjes met logo op de pagina */
 main section:nth-of-type(4) a:has(img) {
 	display: flex;
 	padding: 1rem;
@@ -435,18 +440,22 @@ main section:nth-of-type(4) a:has(img):hover {
 	filter: brightness(var(--hover-brightness-brighter));
 }
 
+/* Logo van Patron sponsoren */
 main section:nth-of-type(4)>a:first-of-type img {
 	max-width: 90%;
 }
 
+/* Logo van Corporate Platinum sponsoren */
 main section:nth-of-type(4) ul:first-of-type img {
 	max-width: 80%;
 }
 
+/* Logo van Corporate Gold sponsoren */
 main section:nth-of-type(4) ul:nth-of-type(2) img {
 	max-width: 60%;
 }
 
+/* Logo van Corporate Silver sponsoren */
 main section:nth-of-type(4) ul:nth-of-type(3) img {
 	max-width: 40%;
 }
@@ -455,6 +464,8 @@ main section:nth-of-type(4) p {
 	color: var(--scnd-txt-color);
 	font-size: var(--font-size-p);
 	font-weight: 500;
+	padding-top: .5rem;
+	padding-bottom: 1rem;
 }
 
 main section:nth-of-type(4) p a {
@@ -462,9 +473,10 @@ main section:nth-of-type(4) p a {
 }
 
 main section:nth-of-type(4) p a:hover {
-	color: #81B9D0;
+	color: var(--lnk-txt-hover-color);
 }
 
+/* Donate Knop */
 main section:nth-of-type(4)>a:last-of-type {
 	background-color: var(--main-btn-color);
 	color: var(--main-txt-color);
@@ -521,31 +533,31 @@ main section:nth-of-type(4)>a:last-of-type:hover {
 		flex-wrap: wrap;
 	}
 
+	/* Logo van Patron sponsoren */
 	main section:nth-of-type(4) a:first-of-type {
 		height: 4.86rem;
 		width: 36.88rem;
 	}
 
+	/* Logo van Corporate Platinum sponsoren */
 	main section:nth-of-type(4) ul:first-of-type a {
 		height: 7.125rem;
 		width: 24.16rem;
 	}
 
+	/* Logo van Corporate Gold sponsoren */
 	main section:nth-of-type(4) ul:nth-of-type(2) a {
 		height: 5.88rem;	
 		width: 17.81rem;
 	}
 
-	main section:nth-of-type(4) ul:nth-of-type(2) a {
-		height: 5.88rem;
-		width: 17.81rem;
-	}
-
+	/* Logo van Corporate Silver sponsoren */
 	main section:nth-of-type(4) ul:nth-of-type(3) a {
 		height: 4.63rem;
 		width: 14rem;
 	}
 
+	/* Alle foto's in de section */
 	main section:nth-of-type(4) img {
 		width: fit-content;
 		height: fit-content;
@@ -553,6 +565,9 @@ main section:nth-of-type(4)>a:last-of-type:hover {
 }
 
 @media (max-width: 900px) {
+
+	/* SECTION 2 */
+
 	/* Image styling overschrijving eerste item */
 	main section:nth-of-type(2) li:first-of-type article:first-of-type img {
 		width: 100%;
@@ -566,14 +581,12 @@ main section:nth-of-type(4)>a:last-of-type:hover {
 
 	/* SECTION 1 */
 
+	/* Padding in de gehele section */
 	main section:first-of-type{
 		padding-left: 2rem;
 	}
 
-	main section:first-of-type>a:first-of-type span:first-of-type {
-		max-width: none;
-	}
-
+	/* Gridverdeling section 1 groot scherm */
 	main section:first-of-type {
 		grid-template-rows: 1fr 1fr auto auto 1fr auto .5fr .5fr 1fr 1fr .5fr .5fr;
 		grid-template-columns: .5fr 1fr 1fr 1fr 1fr
@@ -592,6 +605,7 @@ main section:nth-of-type(4)>a:last-of-type:hover {
 		text-align: start;
 	}
 
+	/* Download Latest Version Button */
 	main section:first-of-type>a:first-of-type {
 		grid-column: 2 / 3;
 		grid-row-start: 6;
@@ -599,10 +613,7 @@ main section:nth-of-type(4)>a:last-of-type:hover {
 		justify-self: start;
 	}
 
-	main section:first-of-type>a:first-of-type span:nth-of-type(2) {
-		border-radius: 0 .63rem .63rem 0;
-	}
-
+	/* What's New Button */
 	main section:first-of-type>a:nth-of-type(2) {
 		grid-column: 3 / 4;
 		grid-row-start: 6;
@@ -615,6 +626,7 @@ main section:nth-of-type(4)>a:last-of-type:hover {
 		justify-self: start;
 	}
 
+	/* Author of background image styling (Polychroma) */
 	main section:first-of-type>a:nth-of-type(3) {
 		grid-column: 5 / 6;
 		grid-row-start: 11;

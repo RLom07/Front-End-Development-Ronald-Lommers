@@ -25,6 +25,7 @@
     --auth-bckg-color: #1a1a1a7a;
     --ftr-color: light-dark(#ffff, #111111);
     --hmb-mnu-bckgrnd-color: #333639;
+    --pckr-bckgrnd-color: #00000099;
 
     /* Colors */
     --color-white: #ffff;
@@ -35,7 +36,7 @@
     --main-txt-color: light-dark(#546B99, #FFFF); 
     --scnd-txt-color: light-dark(#4A5365, #FFFFFFE6);
     --thrd-txt-color: #989A9B;
-    --lnk-txt-color: #668FA0;
+    --lnk-txt-color: #6C94A4;
     --ltst-nws-txt-color: #FFFFFFE6;
     --ftr-bg-txt-color: (#2C2C2C, #FFFFFF);
     --ftr-txt-color: light-dark(#2C2C2C, #898989);
@@ -54,6 +55,8 @@
     --dnte-btn-hover-color: #FF6688;
     --a-lnks-hover-color: #878B92;
     --ftr-hover-color: #7AB1C5;
+    --slct-hover-color: #ffffff1a;
+    --lnk-txt-hover-color: #81B9D0;
 
     /* Hover Brightness */
     --hover-brightness: 120%;
@@ -143,12 +146,8 @@ header nav ul li a {
     padding: 1rem;
 }
 
+/* Taal selectie menu */
 select {
-    display: none;
-}
-
-/* taal veranderen */
-header>img:nth-of-type(1) {
     display: none;
 }
 
@@ -235,13 +234,15 @@ footer {
     padding: 2rem;
 }
 
+/* 4 colomen links in footer */
 footer ul {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 2rem;
     list-style-type: "";
     margin: 0;
     padding: 0;
+    padding-bottom: 2rem;
 }
 
 footer h2 {
@@ -250,6 +251,7 @@ footer h2 {
     font-weight: 800;
 }
 
+/* Styling linkjes */
 footer ul a {
     color: var(--ftr-txt-color);
     text-decoration: none;
@@ -259,17 +261,25 @@ footer ul a:hover {
     color: var(--ftr-hover-color);
 }
 
+/* Streep in de footer */
 footer hr {
     border: none;
     border-top: 0.5px solid var(--color-gray);
 }
 
+/* Tekst onderaan de footer */
 footer section:nth-of-type(5) p {
     color: var(--ftr-txt-color);
     text-align: center;
     font-size: var(--font-size-p);
 }
 
+/* Onderste tekst in de footer */
+footer section:nth-of-type(5) p:last-of-type {
+    padding-top: 2rem;
+}
+
+/* Linkjes in de tekst */
 footer section:nth-of-type(5) p a {
     color: var(--ftr-txt-color);
 }
@@ -278,22 +288,24 @@ footer section:nth-of-type(5) p a:hover {
     color: var(--ftr-hover-color);
 }
 
+/* Section met iconen in de footer */
 footer section:last-of-type {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: .6rem;
+    gap: 3rem;
 }
 
+/* Iconen in de footer */
 footer section a {
-    fill: grey;
+    fill: var(--color-gray);
     width: 2rem;
     height: 2rem;
 }
 
 footer section a:hover {
-    fill: #7AB1C5;
+    fill: var(--ftr-hover-color);
 }
 
 @media (min-width: 500px) {
@@ -335,6 +347,10 @@ footer section a:hover {
         grid-row: 2;
         width: 100%;
         align-self: center;
+    }
+
+    footer ul {
+        padding-bottom: 0;
     }
 
     footer section:nth-of-type(5) {
@@ -393,6 +409,8 @@ footer section a:hover {
 
     /* Bron: UNA */
     /* Hulp gekregen van: Sanne T Hoofd */
+
+    /* Taal selecteren menu */
     select,
     ::picker(select) {
         appearance: base-select;
@@ -400,7 +418,7 @@ footer section a:hover {
 
     ::picker(select) {
         border-radius: 10px;
-        background-color: #00000099;
+        background-color: var(--pckr-bckgrnd-color);
         border-color: var(--color-gray);
         color: var(--txt-color);
         width: 8rem;
@@ -422,7 +440,7 @@ footer section a:hover {
     }
 
     select:hover {
-        background-color: #ffffff1a;
+        background-color: var(--slct-hover-color);
     }
 
     select:focus {
@@ -442,6 +460,7 @@ footer section a:hover {
         display: none;
     }
 
+    /* Opties binnen het taal selecteren menu */
     option {
         padding-top: .5rem;
         padding-bottom: .5rem;

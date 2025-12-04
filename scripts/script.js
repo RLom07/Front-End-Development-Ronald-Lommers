@@ -9,7 +9,10 @@ hamburger.onclick = openClose;
 
 function openClose() {
 	// 1. Zoekt het attribute data-open in de html en kijkt of de waarde gelijk is aan true. 
-	// Vervolgens word er een boolean opgeslagen in de variabelen
+	// Hier word een boolean operator nagebootst, want in html kan geen boolean geschreven worden dus heb ik het zo gedaan:
+	// "True" === "True" = True
+	// "False" === "True" = False
+	// Vervolgens word het resulaat opgeslagen in de variabelen
 	// Simpel gezegd word er gekeken of het menu wel of niet open staat
 	const isOpen = nav.getAttribute("data-open") === "true";
     
@@ -20,5 +23,6 @@ function openClose() {
 
 	// 3. Zet vervolgens aria-expanded op dezelfde waarde wat bijdraagd aan toegangkelijkheid
 	// Deze verteld aan screenreaders of het menu open of dichtgeklapt is
+	// Ook word hierbij de animatie in gang gezet doordat deze waarde in de CSS word gecheckt
 	hamburger.setAttribute("aria-expanded", isOpen ? "false" : "true");
 }

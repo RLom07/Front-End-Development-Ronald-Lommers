@@ -319,6 +319,10 @@ In de looking for godot text zitten links, als je het zinnetje standaard leest i
 
 Werkt mijn skiplink goed op deze manier, zo niet hoe kan ik deze kan verbeteren?
 
+Staan de links in mijn footer zo genoeg uit elkaar?
+
+Is de manier hoe ik mijn footer heb gemaakt goed?
+
 ### Verslag van meeting
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
