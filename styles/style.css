@@ -87,7 +87,12 @@ main section:first-of-type>a:first-of-type {
 }
 
 main section:first-of-type>a:first-of-type:hover{
-	filter: brightness(120%);
+	filter: brightness(var(--hover-brightness));
+}
+
+main section:first-of-type>a:first-of-type:focus {
+	outline: none;
+	border: .2rem solid var(--color-white);
 }
 
 /* Download latest button styling blauwe gedeelte */
@@ -131,7 +136,12 @@ main section:first-of-type>a:nth-of-type(2) {
 }
 
 main section:first-of-type>a:nth-of-type(2):hover {
-	filter: brightness(120%);
+	filter: brightness(var(--hover-brightness));
+}
+
+main section:first-of-type>a:nth-of-type(2):focus {
+	outline: none;
+	border: .2rem solid var(--color-white);
 }
 
 /* Looking for Godot 3 etc tekst algemene styling */
@@ -149,7 +159,11 @@ main section:first-of-type p:nth-of-type(2) a {
 	color: var(--color-white);
 }
 
-/* Author background image styling (Polychroma) */
+main section:first-of-type p:nth-of-type(2) a:hover {
+	color: var(--a-lnks-hover-color);
+}
+
+/* Author of background image styling (Polychroma) */
 main section:first-of-type>a:nth-of-type(3) {
 	grid-column: 2 / 4;
 	grid-row-start: 10;
@@ -190,7 +204,7 @@ main section:nth-of-type(2) a {
 }
 
 main section:nth-of-type(2) a:hover {
-	filter: brightness(130%);
+	filter: brightness(var(--hover-brightness-brighter));
 }
 
 /* Gridverdeling alle items */
@@ -366,7 +380,7 @@ main section:nth-of-type(3) article a {
 }
 
 main section:nth-of-type(3) article a:hover {
-	filter: brightness(130%);
+	filter: brightness(var(--hover-brightness-brighter));
 }
 
 
@@ -418,7 +432,7 @@ main section:nth-of-type(4) a:has(img) {
 }
 
 main section:nth-of-type(4) a:has(img):hover {
-	filter: brightness(130%);
+	filter: brightness(var(--hover-brightness-brighter));
 }
 
 main section:nth-of-type(4)>a:first-of-type img {
@@ -474,7 +488,7 @@ main section:nth-of-type(4)>a:last-of-type {
 }
 
 main section:nth-of-type(4)>a:last-of-type:hover {
-	filter: brightness(130%);
+	filter: brightness(var(--hover-brightness-brighter));
 }
 
 @media (min-width: 500px) {

@@ -355,6 +355,8 @@ UNA
 MDN
 GODOT
 smoothshadows.com
+Sanne T Hoofd
+Tijn Hollander
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>

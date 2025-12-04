@@ -1,5 +1,5 @@
 // Selecteerd het icoontje van het HamburgerMenu
-const hamburger = document.getElementById("hamburgerIcon");
+const hamburger = document.querySelector("header button:has(span)");
 
 // Selecteerd de gehele navigatie van de header
 const nav = document.querySelector("header nav");
