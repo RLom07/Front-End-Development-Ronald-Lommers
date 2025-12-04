@@ -313,7 +313,11 @@ samen met je groepje opstellen
 | ...            | ...                | ...          | ...              |
 
 Ronald:
-Er zit padding aan de randen van de website na een schermgrootte van 1250px, hoe kan ik deze ook aanhouden responsive
+Er zit padding aan de randen van de website na een schermgrootte van 1250px, hoe kan ik deze ook aanhouden responsive want ik gebruik nu een standaard rem
+
+In de looking for godot text zitten links, als je het zinnetje standaard leest is er genoeg context voor de gebruiker om te snappen waar alles voor is. Maar als ze door de links tabben hebben ze mogelijk te weinig context, is het wijs om hier visually hidden text neer te zetten? Want als ze het hele zinnetje horen klinkt het heel raar
+
+Werkt mijn skiplink goed op deze manier, zo niet hoe kan ik deze kan verbeteren?
 
 ### Verslag van meeting
 
@@ -357,6 +361,7 @@ GODOT
 smoothshadows.com
 Sanne T Hoofd
 Tijn Hollander
+A11y
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
