@@ -427,10 +427,23 @@ Wil iets vragen over responsiveness
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+Goede punten:
+De links in de footer staan ver genoeg uit elkaar
+
+Verbeterpunt:
+Verplaats remedy code naar root
+Tekst zit te dicht bij de rand op mobile
+Donate button verplaatsen naar Hamburger Menu
+Footer bij middel formaat 2 elementen naast elkaar zetten
+Reponsiveness padding kan beter door media query of met clamp
+Bij links in een zin gewoon extra info zetten
+Verander section in footer naar Nav
+
+Kennis punt:
+Clamp heeft een minimale en een maximale waarde wat heeft wat bijdraagd aan responiveness
+
+Punt zelf opgemerkt:
+Verhoog de brightness hover voor zwarte logo's
 
 </details>
 
