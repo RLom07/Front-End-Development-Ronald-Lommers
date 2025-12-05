@@ -371,6 +371,26 @@ Bij 2 linkjes onderaan is het contrast net niet genoeg
 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+Deze week was een belangrijke week, ik wilde dat mijn website zo veel mogelijk compleet was voor de usibility test. Na deze test gedaan te hebben bleken er dingen te zijn die ontbraken, zoals een focus en active state, er zaten verschillende errors in de W3CValidator etc. Na een lange avond op campus te zijn gebleven om veel van deze problemen aan te pakken is mijn eerste pagina nu zo goed als compleet. Dat is wat ik dacht totdat ik weer een nieuw probleem op mobile ontdekte die ik moet gaan aanpakken, bij de sponsoren zijn 2 foto's rebels geworden en opeens verdwenen, ook is eentje heel klein geworden. Voor de rest is pagina 1 zo goed mogelijk compleet en kan ik alle kennis en custom properties meenemen naar de tweede pagina.
+
+<img src="readme-images/Website-week-4.png" width="375px" alt="">
+
+<img src="readme-images/Website-week-4-mobile.png" width="375px" alt="">
+
+Helaas ben ik ook deze week minder ver als ik gehoopt had, ik blijf tegen moeilijke dingen aanlopen die mij vertragen. Zoals het taal selecteren menu, dit vond ik moeilijk mede omdat een select voor mij compleet nieuw is maar vooral omdat je selectedcontent niet kan selecteren. Hier had ik veel moeite mee. Uiteindelijk heb ik dit opgelost door de select een background image te geven waardoor het taal selecteren icon nu wel goed werkte, vervolgens heb ik de tekst in de select transparant gemaakt. Dit had echter ook effect op de opties, hierom heb ik dit bij de opties het overschreven door die de kleur wit te geven waardoor het transparante alleen geld voor de geselecteerde content.
+
+<img src="readme-images/code-select.png" width="375px" alt="">
+
+<img src="readme-images/css-select-code.png" width="375px" alt="">
+
+<img src="readme-images/css-options-code.png" width="375px" alt="">
+
+Hoe nu verder?:
+Dit aankomend weekend is cruciaal, ik ga alles op alles zetten om de tweede pagina zo mooi, responsive en toegangelijk mogelijk op te bouwen en te stylen.
+
+Wat als dat niet lukt?:
+Als het niet goed lukt is het erg jammer maar heb ik toch iets, ik heb namelijk zoveel van dit project geleerd dat ik mij veel zelfverzekerder voel om websites te bouwen. Eerder dacht ik alles al te hebben uitgevogeld, maar de waarheid is dat ik niet eens in de buurt kwam. Dit project is echt een eye opener geweest, ik heb zoveel kennis opgedaan van Semantisch HTML en vooral CSS dat zal mij niet meer worden afgenomen.
+
 ### Agenda voor meeting
 
 samen met je groepje opstellen
@@ -391,6 +411,14 @@ Werkt mijn skiplink goed op deze manier, zo niet hoe kan ik deze kan verbeteren?
 Staan de links in mijn footer zo genoeg uit elkaar?
 
 Is de manier hoe ik mijn footer heb gemaakt goed?
+
+Voldoet mijn code aan de eisen?
+
+Iz-Dine:
+Is mijn code nog te redden of moet ik het opnieuw beginnen?
+
+Tijn:
+Voldoet mijn code aan de eisen?
 
 ### Verslag van meeting
 
