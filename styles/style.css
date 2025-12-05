@@ -462,7 +462,7 @@ main section:nth-of-type(4) ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-	gap: 2rem;
+	gap: 3rem;
 	margin: 0;
 	padding: 0;
 }
@@ -471,6 +471,7 @@ main section:nth-of-type(4) ul {
 main section:nth-of-type(4) a:has(img) {
 	display: inline-flex;
 	padding: 1rem;
+	width: 90%;
 	border-radius: .5rem;
 	background: var(--spnsr-btn-color);
 	align-items: center;
@@ -501,22 +502,22 @@ main section:nth-of-type(4) a:has(img):active {
 
 /* Logo van Patron sponsoren */
 main section:nth-of-type(4)>a:first-of-type img {
-	max-width: 90%;
+	width: 90%;
 }
 
 /* Logo van Corporate Platinum sponsoren */
 main section:nth-of-type(4) ul:first-of-type img {
-	max-width: 80%;
+	width: 80%;
 }
 
 /* Logo van Corporate Gold sponsoren */
 main section:nth-of-type(4) ul:nth-of-type(2) img {
-	max-width: 60%;
+	width: 60%;
 }
 
 /* Logo van Corporate Silver sponsoren */
 main section:nth-of-type(4) ul:nth-of-type(3) img {
-	max-width: 40%;
+	width: 40%;
 }
 
 main section:nth-of-type(4) p {

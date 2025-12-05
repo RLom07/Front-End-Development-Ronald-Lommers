@@ -420,6 +420,9 @@ Is mijn code nog te redden of moet ik het opnieuw beginnen?
 Tijn:
 Voldoet mijn code aan de eisen?
 
+Daniel:
+Wil iets vragen over responsiveness
+
 ### Verslag van meeting
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
