@@ -150,11 +150,11 @@ Er is geen skip link aanwezig in de website
 
 ### de Tweede pagina:
 
-<img src="readme-images/full-breakdown-schets-second-page.png" width="375px" alt="breakdown van de hele tweede pagina">
+<img src="readme-images/2-volledige-breakdown-schets-update.png" width="375px" alt="breakdown van de hele tweede pagina">
 
 <img src="readme-images/2-breakdownschets-section1.png" width="375px" alt="breakdown van een dynamisch deel">
 
-<img src="readme-images/2-breakdownschets-section2.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="readme-images/Breakdownschets-update.png" width="375px" alt="breakdown van een dynamisch deel">
 
 <img src="readme-images/2-breakdownschets-section3.png" width="375px" alt="breakdown van een dynamisch deel">
 
