@@ -33,6 +33,7 @@
     --pckr-bckgrnd-color: #00000099;
     --hdr-bckgrnd-color: light-dark(#000, none);
     --crd-bckgrnd-color: light-dark(#ffff, #333639);
+    --ftrs-scnd-bckgrnd-color: #263256;
 
     /* Colors */
     --color-white: #ffff;

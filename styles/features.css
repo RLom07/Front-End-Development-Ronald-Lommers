@@ -21,19 +21,16 @@
     --color-background: #eee;
 }
 
-
-
-
-
 /****************/
 /* JOUW STYLING */
 /****************/
 
+
 /* SECTION 1 */
 
-main section:first-of-type {
+main>section:first-of-type {
     display: grid;
-    grid-template-rows: .3fr 1fr auto auto auto;
+    grid-template-rows: 1fr 1fr auto auto auto;
     padding: 1rem;
     gap: 1rem;
 }
@@ -45,6 +42,7 @@ main section:first-of-type h2{
     text-align: center;
     font-weight: var(--font-weight-h);
     color: var(--main-txt-color);
+    margin: 0;
 }
 
 main section:first-of-type p {
@@ -61,7 +59,8 @@ main section:first-of-type p {
 main section:first-of-type img {
     display: block;
     grid-row-start: 4;
-    max-width: 180%;
+    width: 100%;
+    max-width: 70rem;
     height: auto;
     justify-self: center;
 }
@@ -92,15 +91,15 @@ main section:first-of-type>a {
         0px 0px 24px rgba(3, 7, 18, 0.08);
 }
 
-main section:first-of-type a:hover {
+main section:first-of-type>a:hover {
     filter: brightness(var(--hover-brightness));
 }
 
-main section:first-of-type a:focus {
+main section:first-of-type>a:focus {
     outline: var(--focus-size) solid var(--color-white);
 }
 
-main section:first-of-type a:active {
+main section:first-of-type>a:active {
     filter: brightness(var(--active-brightness));
 }
 
@@ -108,8 +107,8 @@ main section:first-of-type a:active {
 
 main section:nth-of-type(2) {
     display: grid;
-
     padding: 1rem;
+    gap: 2rem;
 }
 
 main section:nth-of-type(2) h2 {
@@ -121,7 +120,7 @@ main section:nth-of-type(2) h2 {
 main section:nth-of-type(2) h3 {
     font-size: var(--font-size-h3);
     font-weight: var(--font-weight-h);
-    color: var(--main-txt-color)
+    color: var(--main-txt-color);
 }
 
 main section:nth-of-type(2) ul {
@@ -151,18 +150,239 @@ main section:nth-of-type(2) article p {
     line-height: 1.6;
 }
 
+main section:nth-of-type(2) article p a {
+    color: var(--lnk-txt-color);
+}
+
+main section:nth-of-type(2) article p a:hover {
+    color: var(--lnk-txt-hover-color);
+}
+
+main section:nth-of-type(2) article p a:focus {
+    outline: var(--focus-size) solid var(--blue-focus);
+}
+
+main section:nth-of-type(2) article p a:active {
+    color: var(--lnk-active-color);
+}
+
 main section:nth-of-type(2) article strong {
     color: var(--str-txt-color);
+}
+
+main section:nth-of-type(2)>section {
+    background-color: var(--ftrs-scnd-bckgrnd-color);
+    padding: 1rem;
+
+    /* Hulp bron: Stackoverflow: Ignore parent padding */
+    margin: -1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+main section:nth-of-type(2)>section p {
+    text-align: start;
+    justify-self: start;
+}
+
+main section:nth-of-type(2)>section ul {
+    display: grid;
+}
+
+main section:nth-of-type(2)>section ul a:hover {
+    filter: brightness(var(--hover-brightness));
+}
+
+main section:nth-of-type(2)>section ul a img:focus {
+    outline: var(--focus-size) solid var(--color-white);
+}
+
+main section:nth-of-type(2)>section ul a:active {
+    filter: brightness(var(--active-brightness));
+}
+
+main section:nth-of-type(2)>section ul a img {
+    border-radius: .93rem;
+    /* max-width: 16.37rem; */
+
+    box-shadow: 0px 0px 0px rgba(3, 7, 18, 0.01),
+    /* Bron code van derde: smoothshadows.com */
+    0px 0px 1px rgba(3, 7, 18, 0.02),
+    0px 0px 2px rgba(3, 7, 18, 0.02),
+    0px 0px 4px rgba(3, 7, 18, 0.03),
+    0px 0px 6px rgba(3, 7, 18, 0.04),
+    0px 0px 9px rgba(3, 7, 18, 0.05),
+    0px 0px 12px rgba(3, 7, 18, 0.06),
+    0px 0px 15px rgba(3, 7, 18, 0.06),
+    0px 0px 19px rgba(3, 7, 18, 0.07),
+    0px 0px 24px rgba(3, 7, 18, 0.08);
+}
+
+main>section:nth-of-type(2)>a:first-of-type {
+    background-color: var(--main-btn-color);
+    padding: 1rem 2.1rem;
+    border-radius: .93rem;
+    color: var(--main-txt-color);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.12rem;
+    font-weight: var(--font-weight-btns);
+    justify-self: center;
+    box-shadow: 0px 0px 0px rgba(3, 7, 18, 0.01),
+        /* Bron code van derde: smoothshadows.com */
+        0px 0px 1px rgba(3, 7, 18, 0.02),
+        0px 0px 2px rgba(3, 7, 18, 0.02),
+        0px 0px 4px rgba(3, 7, 18, 0.03),
+        0px 0px 6px rgba(3, 7, 18, 0.04),
+        0px 0px 9px rgba(3, 7, 18, 0.05),
+        0px 0px 12px rgba(3, 7, 18, 0.06),
+        0px 0px 15px rgba(3, 7, 18, 0.06),
+        0px 0px 19px rgba(3, 7, 18, 0.07),
+        0px 0px 24px rgba(3, 7, 18, 0.08);
+}
+
+main>section:nth-of-type(2)>a:last-of-type {
+    background-color: var(--main-btn-color);
+    padding: 1rem 2.1rem;
+    border-radius: .93rem;
+    color: var(--main-txt-color);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.12rem;
+    font-weight: var(--font-weight-btns);
+    justify-self: center;
+    box-shadow: 0px 0px 0px rgba(3, 7, 18, 0.01),
+        /* Bron code van derde: smoothshadows.com */
+        0px 0px 1px rgba(3, 7, 18, 0.02),
+        0px 0px 2px rgba(3, 7, 18, 0.02),
+        0px 0px 4px rgba(3, 7, 18, 0.03),
+        0px 0px 6px rgba(3, 7, 18, 0.04),
+        0px 0px 9px rgba(3, 7, 18, 0.05),
+        0px 0px 12px rgba(3, 7, 18, 0.06),
+        0px 0px 15px rgba(3, 7, 18, 0.06),
+        0px 0px 19px rgba(3, 7, 18, 0.07),
+        0px 0px 24px rgba(3, 7, 18, 0.08);
+}
+
+main>section:nth-of-type(2)>a:first-of-type:hover,
+main>section:nth-of-type(2)>a:last-of-type:hover {
+    filter: brightness(var(--hover-brightness));
+}
+
+main>section:nth-of-type(2)>a:first-of-type:focus,
+main>section:nth-of-type(2)>a:last-of-type:focus {
+    outline: var(--focus-size) solid var(--color-white);
+}
+
+main>section:nth-of-type(2)>a:first-of-type:active,
+main>section:nth-of-type(2)>a:last-of-type:active {
+    filter: brightness(var(--active-brightness));
+}
+
+
+/* SECTION 3 */
+
+main section:nth-of-type(3) {
+    display: grid;
+    background-color: var(--ftrs-scnd-bckgrnd-color);
+    gap: 1rem;
+}
+
+main section:nth-of-type(3) h2 {
+    font-size: var(--font-size-h2);
+    color: var(--main-txt-color);
+    justify-self: center;
+}
+
+main section:nth-of-type(3) p {
+    font-size: var(--font-size-p);
+    color: var(--scnd-txt-color);
+    text-align: center;
+}
+
+/* Download latest button algemene styling */
+main section:nth-of-type(3)>a:first-of-type {
+    justify-self: center;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: stretch;
+
+    background: var(--color-white);
+    color: var(--dwnl-btn-txt-color);
+    border-radius: .94rem;
+    font-weight: var(--font-weight-btns);
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    max-width: 100%;
+    box-shadow: 0px 0px 0px rgba(3, 7, 18, 0.01),
+        /* Bron code van derde: smoothshadows.com */
+        0px 0px 1px rgba(3, 7, 18, 0.02),
+        0px 0px 2px rgba(3, 7, 18, 0.02),
+        0px 0px 4px rgba(3, 7, 18, 0.03),
+        0px 0px 6px rgba(3, 7, 18, 0.04),
+        0px 0px 9px rgba(3, 7, 18, 0.05),
+        0px 0px 12px rgba(3, 7, 18, 0.06),
+        0px 0px 15px rgba(3, 7, 18, 0.06),
+        0px 0px 19px rgba(3, 7, 18, 0.07),
+        0px 0px 24px rgba(3, 7, 18, 0.08);
+}
+
+main section:nth-of-type(3)>a:first-of-type:hover {
+    filter: brightness(var(--hover-brightness));
+}
+
+main section:nth-of-type(3)>a:first-of-type:focus {
+    outline: var(--focus-size) solid var(--color-white);
+}
+
+main section:nth-of-type(3)>a:first-of-type:active {
+    filter: brightness(var(--active-brightness));
+}
+
+/* Download latest button styling blauwe gedeelte */
+main section:nth-of-type(3)>a:first-of-type em {
+    background: var(--ltst-btn-color);
+    color: var(--color-white);
+    padding: 1.2rem 1rem;
+    border-radius: 0 .6rem .6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+main section:nth-of-type(3) p:nth-of-type(2) a {
+    color: var(--color-white);
+}
+
+main section:nth-of-type(3) p:nth-of-type(2) a:hover {
+    color: var(--a-lnks-hover-color);
+}
+
+main section:nth-of-type(3) p:nth-of-type(2) a:focus {
+    outline: var(--focus-size) solid var(--color-white);
+}
+
+main section:nth-of-type(3) p:nth-of-type(2) a:active {
+    color: var(--a-active-color);
+}
+
+@media (min-width: 626px) {
+
+    /* SECTION 2 */
+
+    main section:nth-of-type(2)>section ul {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 
 @media (min-width: 768px) {
 
     /* SECTION 1 */
-
-    main section:first-of-type img {
-        width: 80%;
-    }
 
     main section:first-of-type a {
         width: 30%;
@@ -176,9 +396,18 @@ main section:nth-of-type(2) article strong {
     main section:nth-of-type(2) ul:first-of-type,
     main section:nth-of-type(2) ul:nth-of-type(3),
     main section:nth-of-type(2) ul:nth-of-type(4),
-    main section:nth-of-type(2) ul:nth-of-type(6) {
+    main section:nth-of-type(2) ul:nth-of-type(5) {
         grid-template-columns: 1fr 1fr;
         gap: 2.25rem;
+    }
+}
+
+@media (min-width: 893px) {
+
+    /* SECTION 2 */
+
+    main section:nth-of-type(2)>section ul {
+        grid-template-columns: 1fr 1fr 1fr !important;
     }
 }
 
@@ -189,11 +418,36 @@ main section:nth-of-type(2) article strong {
     main section:nth-of-type(2) ul:first-of-type,
     main section:nth-of-type(2) ul:nth-of-type(3),
     main section:nth-of-type(2) ul:nth-of-type(4),
-    main section:nth-of-type(2) ul:nth-of-type(6) {
+    main section:nth-of-type(2) ul:nth-of-type(5) {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    main section:nth-of-type(2) ul:nth-of-type(2) {
+    main section:nth-of-type(2) ul:nth-of-type(2),
+    main section:nth-of-type(2) ul:nth-of-type(6) {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1159px) {
+
+    /* SECTION 2 */
+
+    main section:nth-of-type(2)>section ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    main section:nth-of-type(2) {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    main section:nth-of-type(2)>section {
+        margin-left: -10rem;
+        margin-right: -10rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
     }
 }
