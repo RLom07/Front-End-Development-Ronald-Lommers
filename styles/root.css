@@ -44,11 +44,11 @@
     --scnd-txt-color: light-dark(#4A5365, #FFFFFFE6);
     --thrd-txt-color: #989A9B;
     --lnk-txt-color: #6C94A4;
-    --ltst-nws-txt-color: #FFFFFFE6;
     --ftr-bg-txt-color: (#2C2C2C, #FFFFFF);
     --ftr-txt-color: light-dark(#2C2C2C, #898989);
     --feturs-txt-color: light-dark(#546B99,#d4e3f6);
     --crd-h4-color: #57b3f8;
+    --str-txt-color: #ef6767;
 
     /* Button Colors */
     --main-btn-color: light-dark(#FFFF, #333639);
