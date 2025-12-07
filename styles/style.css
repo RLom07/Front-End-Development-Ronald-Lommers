@@ -129,7 +129,6 @@ main section:first-of-type>a:nth-of-type(2) {
 	text-align: center;
 	font-size: 1.12rem;
 	font-weight: var(--font-weight-btns);
-	opacity: 1;
 	box-shadow: 0px 0px 0px rgba(3, 7, 18, 0.01),
 		/* Bron code van derde: smoothshadows.com */
 		0px 0px 1px rgba(3, 7, 18, 0.02),

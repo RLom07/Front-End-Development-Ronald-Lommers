@@ -18,11 +18,11 @@ Ronald Lommers
 
 #### Je startniveau:
 
-Rode Piste
+Voordat ik aan het project begon dacht ik op zeer hoog niveau te zijn, ik dacht zelfs op zwarte piste niveau te zijn. Maar zoals het spreekwoord luid, hoogmoed komt voor den val. Na opdrachten gemaakt te hebben en gezien te hebben wat echt goed programmeren is kom ben ik erachter gekomen dat ik niet eens in de buurt van zwarte piste niveau kom. Daarom is mijn start niveau Paarse Piste, tussen blauw en rood in. Dit omdat ik wel programmeer ervaring heb maar grotendeels dat back end is, hierdoor kende ik de basis van HTML CSS wel maar gevorderd niet. Ik zal enorm mijn best doen om zoveel mogelijk te leren om zo mijn doel te bereiken, mooi kunnen programmeren met als doel het web toegankelijk maken voor iedereen.
 
 #### Je focus:
 
-Responsive Design
+Ik wil graag focussen op responsive design, dit omdat ik dit nog altijd erg lastig vind en ik mijzelf hier graag in wil verbeteren.
 
 </details>
 
@@ -471,19 +471,47 @@ Korte omschrijving met plaatjes
 
 ## Bronnenlijst
 
-UNA Select
+UNA Select:
+https://una.im/select-updates/
+
 GODOT
+https://godotengine.org/
+
 smoothshadows.com
+https://smoothshadows.com/
+
 Tijn Hollander
+Voor advies over code en bestandsindeling.
+
 Sanne T Hoofd
-a11yproject.com
+Voor uitleg over Grid en Flex, hulp bij het programmeren, het helpen met oplossen van problemen en nog veel meer.
+
+a11yproject.com Visibility Hidden:
+https://www.a11yproject.com/posts/how-to-hide-content/
+
 MDN light-dark()
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/light-dark
+
 W3schools Filter
+https://www.w3schools.com/cssref/css3_pr_filter.php
+
 MDN :Focus
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus
+
 W3schools :Outline
+https://www.w3schools.com/css/css_outline.asp
+
 MDN :Outline
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/outline
+
 MDN transform
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transform
+
 Mathijs Studentassistent
+Voor hulp bij het verbeteren van de select
+
+W3schools CSS Text Spacing
+https://www.w3schools.com/css/css_text_spacing.asp
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>

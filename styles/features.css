@@ -29,3 +29,127 @@
 /* JOUW STYLING */
 /****************/
 
+/* SECTION 1 */
+
+main section:first-of-type {
+    display: grid;
+    grid-template-rows: .3fr 1fr auto auto auto;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+main section:first-of-type h2{
+    grid-row-start: 2;
+    font-size: var(--font-size-h2);
+    justify-self: center;
+    text-align: center;
+    font-weight: var(--font-weight-h);
+    color: var(--main-txt-color);
+}
+
+main section:first-of-type p {
+    grid-row-start: 3;
+    font-size: var(--font-size-p);
+
+    /* Hulp bron: W3schools CSS Text Spacing */
+    line-height: 1.6;
+    justify-self: center;
+    text-align: center;
+    color: var(--feturs-txt-color);
+}
+
+main section:first-of-type img {
+    grid-row-start: 4;
+    max-width: 180%;
+    height: auto;
+    justify-self: center;
+}
+
+main section:first-of-type>a {
+    grid-row-start: 5;
+
+    background-color: var(--main-btn-color);
+    padding: 1rem 2.1rem;
+    width: 80%;
+    border-radius: .93rem;
+    color: var(--main-txt-color);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.12rem;
+    font-weight: var(--font-weight-btns);
+    justify-self: center;
+    box-shadow: 0px 0px 0px rgba(3, 7, 18, 0.01),
+        /* Bron code van derde: smoothshadows.com */
+        0px 0px 1px rgba(3, 7, 18, 0.02),
+        0px 0px 2px rgba(3, 7, 18, 0.02),
+        0px 0px 4px rgba(3, 7, 18, 0.03),
+        0px 0px 6px rgba(3, 7, 18, 0.04),
+        0px 0px 9px rgba(3, 7, 18, 0.05),
+        0px 0px 12px rgba(3, 7, 18, 0.06),
+        0px 0px 15px rgba(3, 7, 18, 0.06),
+        0px 0px 19px rgba(3, 7, 18, 0.07),
+        0px 0px 24px rgba(3, 7, 18, 0.08);
+}
+
+main section:first-of-type a:hover {
+    filter: brightness(var(--hover-brightness));
+}
+
+main section:first-of-type a:focus {
+    outline: var(--focus-size) solid var(--color-white);
+}
+
+main section:first-of-type a:active {
+    filter: brightness(var(--active-brightness));
+}
+
+/* SECTION 2 */
+
+main section:nth-of-type(2) {
+    display: grid;
+
+    padding: 1rem;
+}
+
+main section:nth-of-type(2) h2 {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h);
+    color: var(--main-txt-color);
+}
+
+main section:nth-of-type(2) h3 {
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-h);
+    color: var(--main-txt-color)
+}
+
+main section:nth-of-type(2) ul {
+    list-style-type: "";
+    margin: 0;
+    padding: 0;
+}
+
+main section:nth-of-type(2) article {
+    background-color: var(--crd-bckgrnd-color);
+    padding: 1.25rem;
+    border-radius: .93rem;
+}
+
+main section:nth-of-type(2) article h4 {
+    font-size: var(--font-size-h4);
+    color: var(--crd-h4-color);
+    font-family: var(--font-weight-h);
+}
+
+@media (min-width: 768px) {
+
+    /* SECTION 1 */
+
+    main section:first-of-type img {
+        width: 80%;
+    }
+
+    main section:first-of-type a {
+        width: 30%;
+    }
+}
