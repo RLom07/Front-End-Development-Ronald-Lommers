@@ -454,20 +454,44 @@ Verhoog de brightness hover voor zwarte logo's
 
 ### Je uitkomst - karakteristiek screenshots:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Eindresultaat-Eerste-pagina-Desktop.png" width="375px" alt="Screenshot pagina 1 desktop formaat">
+
+  <img src="readme-images/Eindresultaat-eerste-pagina-mobile.png" width="375px" alt="Screenshot pagina 1 Mobile formaat formaat">
+
+  <img src="readme-images/Eindresultaat-tweede-pagina-Desktop.png" width="375px" alt="Screenshot pagina 2 desktop formaat">
+
+  <img src="readme-images/Eindresultaat-tweede-pagina-mobile.png" width="375px" alt="Screenshot pagina 2 mobile formaat">
 
 ### Dit ging goed/Heb ik geleerd:
 
-Korte omschrijving met plaatjes
+Ik heb van dit project enorm veel geleerd, ik kan met een gerust hart zeggen dat dit het meest leerzame project is waar ik tot nu toe aan deelgenomen heb op de opleiding. Hier een lijstje van alle dingen waar ik beter in geworden ben of heb geleerd:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+-Responsive Design, dit is iets wat ik nog steeds wel een beetje moeilijk vind. Maar tijdens het maken van deze opdracht heb ik nieuwe vaardigheden geleered die mij hier zo goed mee helpen dat ik niet langer geintimideerd ben door responsive design
+<img src="readme-images/Een-van-de-responsive-onderdelen.png" width="375px">
+
+-Werken met Grid, zoals ik eerder in het verslag vermeld had waren ik een grid in het begin geen 'vriendjes'. Door het maken van de sommetjes van Sanne en een paar keer spelen van Grid Garden ging ik het toch maar een kans geven in dit project. Er ging een wereld voor mij open toen ik beselfte wat je allemaal kan met grid, ik weet vrijwel zeker dat ik nu niet meer zonder kan.
+<img src="readme-images/Een-van-de-grid-layouts.png" width="375px">
+
+-Werken met flex, Ik had zelf nooit de moeite genomen om goed te leren werken met flex. Hoeweel ik bijna altijd grid boven flex kies vind ik flex toch een van de dingen die ik graag aan mijn 'gereedschapskist' toevoeg. Door het spelen van Flex Box froggy en op een gegeven moment zelf flex te gebruiken het project ben ik ook met dit comfortabel geworden.
+<img src="readme-images/flex-layout.png" width="375px">
+
+-Semantisch programmeren, ik ben een tijd lang een chronische DIV gebruiker geweest net als meeste developers. Ik gebruikte vaak overal divs voor om dingen te stylen, te plaatsen etc. Tijdens dit project heb ik ontdekt dat er betere alternatieve zijn dat alleen maar divs, als het aankomt op toegankelijkheid zijn bijvoorbeeld ul's of articles veel beter om te gebruiken. Ook dit is iets waar ik van geleerd heb.
+<img src="readme-images/foto-van-code.png" width="375px">
+
+-Selectoren, het eerste dat ik vroeg toen ik hoorde dat we niet met classes en id's als selectoren mochten werken was "Wat moeten we dan gebruiken?". Ik wist helemaal geen andere manier om elementen te selecteren dan classes en id's, de selectoren die ik in dit project gebruikt hebt waren dus compleet nieuw voor mij. In het begin heb ik hier enorme moeite mee gehad omdat ik niet goed snapte hoe ze werkte. Nu aan het einde van deze opdracht kan ik zeggen dat ik ook met deze selectoren comfortabel ben geworden (:first-of-type, nth-of-type, last-of-type, :has() etc) er valt nog veel te leren maar dit is iets dat ik net als alles mee zal nemen naar volgende projecten.
+<img src="readme-images/foto-selectoren-css.png" width="375px">
+
+-Toegankelijkheid, toegankelijkheid is iets waar ik mij hiervoor nooit mee bezig heb gehouden. Ik heb het geluk dat ik alles mee heb en geen aparte dingen nodig hebt. De lessen en dit project heeft mij kennis laten maken met hoe ik toegankelijk kan programmeren voor mensen met verschillende beperkingen zoals zicht of motoriek. Ik het begin vind ik dit lastig om rekening mee te houden, uiteindelijk heb ik toch mijn website zo toegankelijk mogelijk weten te maken. Dit is iets waar ik veel van heb geleerd maar nog veel meer van wil gaan leren, want het web is van iedereen!
+<img src="readme-images/toegankelijke-header.png" width="375px">
+<img src="readme-images/tab-focus.png" width="375px">
 
 ### Dit was lastig/Is niet gelukt:
 
-Korte omschrijving met plaatjes
+<img src="readme-images/choice-of-many-developers.png" width="375px">
+Het stukje "Choice of many developers" implementeren in de website vond ik erg lastig. Het is namelijk een heel anders uitziend element in het midden van een section. Eerst wilde ik het doen alleen doormiddel van een ul, dit is mij helaas niet gelukt. Daarom heb ik uiteindelijk toch een section om de elementen gedaan, alsnog was het een behoorlijke uitdaging.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
-</details>
+<img src="readme-images/language-select-menu.png" width="375px">
+Iets wat ik ook lastig vond was het implementeren van het language select menu, hier had ik nog nooit mee gewerkt vond het lastig om te implementeren. De grootste struggle hiermee vond ik dat het niet mogelijk was om in de css de "selectedContent" aan te spreken om deze appart te stylen.
 
 ## Bronnenlijst
 
@@ -521,6 +545,9 @@ https://cssgradient.io/
 
 Stackoverflow @Media min-width & max-width
 https://stackoverflow.com/questions/13550541/media-min-width-max-width
+
+W3schools CSS :has() Pseudo-class
+https://www.w3schools.com/cssref/sel_has.php
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>

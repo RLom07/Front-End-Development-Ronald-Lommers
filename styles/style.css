@@ -653,6 +653,7 @@ main section:nth-of-type(4) ul {
 }
 
 /* Alle linkjes met logo op de pagina */
+/* Hulp bron: W3schools CSS :has() Pseudo-class */
 main section:nth-of-type(4) a:has(img) {
 	display: inline-flex;
 	padding: 1rem;
