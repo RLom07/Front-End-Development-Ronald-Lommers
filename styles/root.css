@@ -132,7 +132,8 @@ header {
     justify-content: space-around;
     backdrop-filter: blur(10px);
     background-color: var(--hdr-bckgrnd-color);
-    font-family: Montserrat, sans-serif
+    font-family: Montserrat, sans-serif;
+    padding-top: 1rem;
 }
 
 /* Skip link */
@@ -170,6 +171,62 @@ header>a:nth-of-type(2) img:hover {
 
 header>a:nth-of-type(2) img:active {
     filter: brightness(var(--active-brightness));
+}
+
+/* Styling van de knop om het hamburger menu icoontje heen*/
+header button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: .3rem;
+}
+
+header button:hover {
+    background-color: #ffffff1a;
+    border-radius: 2rem;
+}
+
+header button:focus {
+    outline: var(--focus-size) solid var(--color-white);
+}
+
+/* 3 spans die het icoontje van het hamberger menu maken */
+header button span {
+    width: 2rem;
+    height: .2rem;
+    background: var(--color-white);
+    border-radius: 99rem;
+    transition: transform .3s ease, opacity .1s;
+    /* Hulp bron: Mdn transition */
+}
+
+/* Animatie */
+
+/* Hulp bron: Mdn transform */
+
+/* Als er word geklikt word deze span (Streepje) 45 grade gedraaid en een klein stukje naar beneden geduwd zodat deze goed aansluit */
+header button[aria-expanded="true"] span:nth-of-type(1) {
+    transform: translateY(.5rem) rotate(45deg);
+}
+
+/* Als er word geklikt verdwijnt de middelste span (streepje) */
+header button[aria-expanded="true"] span:nth-of-type(2) {
+    opacity: 0;
+}
+
+/* Als er word geklikt word deze span (Streepje) -45 grade gedraaid en een klein stukje naar boven geduwd zodat deze goed aansluit */
+header button[aria-expanded="true"] span:nth-of-type(3) {
+    transform: translateY(-.5rem) rotate(-45deg);
 }
 
 header nav {
@@ -250,53 +307,6 @@ header nav a:has(img):active {
 header nav a:has(img) img {
     width: .81rem;
     height: auto;
-}
-
-/* Styling van de knop om het hamburger menu icoontje heen*/
-header button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-
-    width: 2.5rem;
-    height: 2.5rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    gap: .3rem;
-}
-
-/* 3 spans die het icoontje van het hamberger menu maken */
-header button span {
-    width: 2rem;
-    height: .2rem;
-    background: var(--color-white);
-    border-radius: 99rem;
-    transition: transform .3s ease, opacity .1s;
-    /* Hulp bron: Mdn transition */
-}
-
-/* Animatie */
-
-/* Hulp bron: Mdn transform */
-
-/* Als er word geklikt word deze span (Streepje) 45 grade gedraaid en een klein stukje naar beneden geduwd zodat deze goed aansluit */
-header button[aria-expanded="true"] span:nth-of-type(1) {
-    transform: translateY(.5rem) rotate(45deg);
-}
-
-/* Als er word geklikt verdwijnt de middelste span (streepje) */
-header button[aria-expanded="true"] span:nth-of-type(2) {
-    opacity: 0;
-}
-
-/* Als er word geklikt word deze span (Streepje) -45 grade gedraaid en een klein stukje naar boven geduwd zodat deze goed aansluit */
-header button[aria-expanded="true"] span:nth-of-type(3) {
-    transform: translateY(-.5rem) rotate(-45deg);
 }
 
 

@@ -8,11 +8,7 @@ const nav = document.querySelector("header nav");
 hamburger.onclick = openClose;
 
 function openClose() {
-	// 1. Zoekt het attribute data-open in de html en kijkt of de waarde gelijk is aan true. 
-	// Hier word een boolean operator nagebootst, want in html kan geen boolean geschreven worden dus heb ik het zo gedaan:
-	// "True" === "True" = True
-	// "False" === "True" = False
-	// Vervolgens word het resulaat opgeslagen in de variabelen
+	// 1. Zoekt het attribute data-open in de html en geeft het resultaat true of false terug aan de hand van data-open
 	// Simpel gezegd word er gekeken of het menu wel of niet open staat
 	const isOpen = nav.getAttribute("data-open") === "true";
     
