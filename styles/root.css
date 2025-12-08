@@ -143,25 +143,32 @@ header>a:first-of-type {
 
 header>a:first-of-type:focus {
     left: 0;
+    outline: var(--focus-size) solid var(--blue-focus);
 }
 
-/* Logo */
-header>a:nth-last-of-type(2) img {
+/* Link om logo heen */
+header>a:nth-of-type(2) {
     width: 8.5rem;
     height: 3rem;
 }
 
-header>a:nth-last-of-type(2) img:hover {
-    filter: brightness(var(--hover-brightness));
-    /* Hulp bron: W3schools Filter */
-}
-
-header>a:nth-last-of-type(2):focus {
+header>a:nth-of-type(2):focus {
     /* Hulp bron: MDN :Focus */
     outline: var(--focus-size) solid var(--blue-focus);
 }
 
-header>a:nth-last-of-type(2):active {
+/* Logo */
+header>a:nth-of-type(2) img {
+    width: 8.5rem;
+    height: 3rem;
+}
+
+header>a:nth-of-type(2) img:hover {
+    filter: brightness(var(--hover-brightness));
+    /* Hulp bron: W3schools Filter */
+}
+
+header>a:nth-of-type(2) img:active {
     filter: brightness(var(--active-brightness));
 }
 
@@ -171,7 +178,6 @@ header nav {
     left: 0;
     right: 0;
     background-color: var(--hmb-mnu-bckgrnd-color);
-    padding: 1rem 1.5rem;
     display: none;
     flex-direction: column;
     gap: 2rem;
@@ -216,33 +222,32 @@ select {
 }
 
 /* Donate button */
-header>a:nth-of-type(3) {
+header nav a:has(img) {
     color: var(--color-white);
     text-decoration: none;
     background-color: var(--dn-btn-color);
     padding: .8rem 1.2rem;
     border-radius: .63rem;
 
-    display: inline-flex;
-    justify-self: flex-end;
-    align-items: center;
+    display: flex;
+    justify-content: center;
     gap: .5rem;
 }
 
-header>a:nth-of-type(3):hover {
+header nav a:has(img):hover {
     background-color: var(--dnte-btn-hover-color);
 }
 
-header>a:nth-of-type(3):focus {
+header nav a:has(img):focus {
     outline: var(--focus-size) solid var(--color-white);
 }
 
-header>a:nth-of-type(3):active {
+header nav a:has(img):active {
     background-color: var(--dnte-btn-active-color);
 }
 
 /* Hartje in Donate Knop */
-header>a:nth-of-type(3) img {
+header nav a:has(img) img {
     width: .81rem;
     height: auto;
 }
@@ -261,6 +266,7 @@ header button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: center;
     gap: .3rem;
 }
 
@@ -297,6 +303,7 @@ header button[aria-expanded="true"] span:nth-of-type(3) {
 /* FOOTER */
 
 footer {
+    display: grid;
     background-color: var(--ftr-color);
     padding: 2rem;
 }
@@ -403,6 +410,19 @@ footer section:last-of-type a:active {
     header {
         padding: 1rem;
     }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    footer section {
+        justify-self: center;
+    }
+
+    footer section:nth-of-type(5) {
+        grid-column-start: 1;
+    }
 }
 
 @media (min-width: 768px) {
@@ -412,6 +432,10 @@ footer section:last-of-type a:active {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr .5fr .5fr;
+    }
+
+    footer section {
+        justify-self: start;
     }
 
     footer section:first-of-type {
