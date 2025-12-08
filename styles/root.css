@@ -35,6 +35,9 @@
     --crd-bckgrnd-color: light-dark(#ffff, #333639);
     --ftrs-scnd-bckgrnd-color: #263256;
 
+    /* Code van derde: cssgradient.io */
+    --ftrs-scton-1-bckgrnd-color: radial-gradient(circle, rgba(59, 79, 129, 1) 0%, rgba(18, 18, 43, 1) 100%);
+
     /* Colors */
     --color-white: #ffff;
     --color-gray: gray;
@@ -107,6 +110,15 @@
 
 }
 
+html {
+    font-family: Godot-woff, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--main-bg-color);
+}
+
 
 /* HEADER */
 
@@ -120,6 +132,7 @@ header {
     justify-content: space-around;
     backdrop-filter: blur(10px);
     background-color: var(--hdr-bckgrnd-color);
+    font-family: Montserrat, sans-serif
 }
 
 /* Skip link */

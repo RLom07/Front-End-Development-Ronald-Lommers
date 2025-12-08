@@ -33,6 +33,7 @@ main>section:first-of-type {
     grid-template-rows: 1fr 1fr auto auto auto;
     padding: 1rem;
     gap: 1rem;
+    background: var(--ftrs-scton-1-bckgrnd-color);
 }
 
 main section:first-of-type h2{
@@ -41,7 +42,7 @@ main section:first-of-type h2{
     justify-self: center;
     text-align: center;
     font-weight: var(--font-weight-h);
-    color: var(--main-txt-color);
+    color: var(--color-white);
     margin: 0;
 }
 
@@ -53,7 +54,7 @@ main section:first-of-type p {
     line-height: 1.6;
     justify-self: center;
     text-align: center;
-    color: var(--feturs-txt-color);
+    color: var(--color-white);
 }
 
 main section:first-of-type img {
@@ -68,11 +69,11 @@ main section:first-of-type img {
 main section:first-of-type>a {
     grid-row-start: 5;
 
-    background-color: var(--main-btn-color);
+    background-color: var(--wtsn-btn-color);
     padding: 1rem 2.1rem;
     width: 80%;
     border-radius: .93rem;
-    color: var(--main-txt-color);
+    color: var(--color-white);
     text-decoration: none;
     text-align: center;
     font-size: 1.12rem;
@@ -108,7 +109,7 @@ main section:first-of-type>a:active {
 main section:nth-of-type(2) {
     display: grid;
     padding: 1rem;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 main section:nth-of-type(2) h2 {
@@ -134,6 +135,7 @@ main section:nth-of-type(2) ul {
 main section:nth-of-type(2) article {
     background-color: var(--crd-bckgrnd-color);
     padding: 1.25rem;
+    padding-top: .5rem;
     border-radius: .93rem;
     height: 100%;
 }
@@ -178,6 +180,10 @@ main section:nth-of-type(2)>section {
     margin: -1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+main section:nth-of-type(2)>section h3 {
+    color: var(--color-white);
 }
 
 main section:nth-of-type(2)>section p {
@@ -290,13 +296,13 @@ main section:nth-of-type(3) {
 
 main section:nth-of-type(3) h2 {
     font-size: var(--font-size-h2);
-    color: var(--main-txt-color);
+    color: var(--color-white);
     justify-self: center;
 }
 
 main section:nth-of-type(3) p {
     font-size: var(--font-size-p);
-    color: var(--scnd-txt-color);
+    color: var(--color-white);
     text-align: center;
 }
 

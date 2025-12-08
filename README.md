@@ -516,6 +516,9 @@ https://www.w3schools.com/css/css_text_spacing.asp
 Stackoverflow: Ignore parent padding
 https://stackoverflow.com/questions/4296530/ignore-parent-padding
 
+CSSgradient.io
+https://cssgradient.io/
+
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
