@@ -519,6 +519,9 @@ https://stackoverflow.com/questions/4296530/ignore-parent-padding
 CSSgradient.io
 https://cssgradient.io/
 
+Stackoverflow @Media min-width & max-width
+https://stackoverflow.com/questions/13550541/media-min-width-max-width
+
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 

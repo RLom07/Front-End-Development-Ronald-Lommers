@@ -134,6 +134,7 @@ header {
     background-color: var(--hdr-bckgrnd-color);
     font-family: Montserrat, sans-serif;
     padding-top: 1rem;
+    z-index: 1;
 }
 
 /* Skip link */

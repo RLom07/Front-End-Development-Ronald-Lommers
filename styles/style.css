@@ -37,6 +37,7 @@ main section:first-of-type {
 	background-size: cover;
 	background-position: center;
 	display: grid;
+	padding: 1rem;
 	grid-template-rows: 1fr auto auto auto auto .5fr .5fr 1fr 1fr .5fr .5fr;
 	grid-template-columns: repeat(4, auto);
 }
@@ -222,9 +223,9 @@ main section:nth-of-type(2) h2 {
 main section:nth-of-type(2)>ul {
 	display: grid;
 	grid-template-rows: auto .5fr 1fr 1fr;
-	gap: 3rem;
 	list-style-type: "";
 	padding: .5rem;
+	gap: 3rem;
 	margin: 0;
 }
 
@@ -250,8 +251,8 @@ main section:nth-of-type(2) a:active {
 /* Gridverdeling alle items */
 main section:nth-of-type(2) article {
 	display: grid;
-	grid-template-columns: auto 1fr;
-	column-gap: 1.5rem;
+	grid-template-rows: auto auto auto auto;
+	gap: 1.5rem;
 	align-items: start;
 }
 
@@ -260,21 +261,20 @@ main section:nth-of-type(2) article h3 {
 	color: var(--main-txt-color);
 	font-size: 1.19rem;
 	margin: 0;
-	grid-column-start: 3;
 	font-weight: var(--font-weight-h);
+	grid-row-start: 2;
 }
 
 /* P styling alle items */
 main section:nth-of-type(2) article p {
-	display: none;
 	font-size: var(--font-size-p);
 	color: var(--scnd-txt-color);
+	grid-row-start: 3;
 }
 
 /* Image styling alle items */
 main section:nth-of-type(2) article img {
-	width: 10rem;
-	height: 5.63rem;
+	width: 100%;
 	grid-row-start: 1;
 	border-radius: .44rem;
 	box-shadow: 0px 0px 0px rgba(3, 7, 18, 0.01),
@@ -292,27 +292,8 @@ main section:nth-of-type(2) article img {
 
 /* Datum indeling alle items */
 main section:nth-of-type(2) article time {
-	grid-column-start: 3;
-	grid-row-start: 3;
+	grid-row-start: 4;
 	color: var(--scnd-txt-color);
-}
-
-/* Gridverdeling overschrijving eerste item */
-main section:nth-of-type(2) li:first-of-type article {
-	display: grid;
-	grid-template-rows: auto auto auto;
-	grid-template-columns: none;
-}
-
-/* H3 overschrijving eerste item */
-main section:nth-of-type(2) li:first-of-type article:first-of-type h3 {
-	font-size: 1.4rem;
-	grid-column-start: 1;
-}
-
-/* P overschrijving eerste item */
-main section:nth-of-type(2) li:first-of-type article:first-of-type p {
-	display: block;
 }
 
 /* Datum overschrijving eerste item */
@@ -347,6 +328,32 @@ main section:nth-of-type(2) ul li:last-of-type a {
 
 main section:nth-of-type(2) ul li:last-of-type a:focus {
 	outline: var(--focus-size) solid var(--blue-focus);
+}
+
+/* Hulp Bron: Stackoverflow @Media min-width & max-width */
+@media (min-width: 500px) and (max-width: 1200px) {
+
+
+	main section:nth-of-type(2)>ul {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+}
+
+@media (max-width: 900px) {
+
+	/* SECTION 2 */
+
+	main section:nth-of-type(2) a:has(article) {
+		width: 100%;
+	}
+
+	/* Image styling overschrijving eerste item */
+	main section:nth-of-type(2) li:first-of-type article:first-of-type img {
+		width: 100%;
+		height: auto;
+		max-width: 29rem;
+	}
 }
 
 /* SECTION 3 */
@@ -587,29 +594,6 @@ main section:nth-of-type(4)>a:last-of-type:active {
 	filter: brightness(var(--active-brightness));
 }
 
-@media (min-width: 500px) {
-
-	/* SECTION 2 */
-
-	/* Gridverdeling alle items */
-	main section:nth-of-type(2) article {
-		grid-template-columns: auto 1fr;
-		grid-template-rows: .1fr .1fr .1fr;
-		grid-row-start: 1;
-		grid-column-start: 2;
-	}
-
-	/* H3 styling alle items */
-	main section:nth-of-type(2) article h3 {
-		grid-column-start: 2;
-	}
-
-	/* Datum indeling alle items */
-	main section:nth-of-type(2) article time {
-		grid-column-start: 2;
-	}
-}
-
 @media (min-width: 768px) {
 
 	/* SECTION 4 */
@@ -646,18 +630,6 @@ main section:nth-of-type(4)>a:last-of-type:active {
 	main section:nth-of-type(4) img {
 		width: fit-content;
 		height: fit-content;
-	}
-}
-
-@media (max-width: 900px) {
-
-	/* SECTION 2 */
-
-	/* Image styling overschrijving eerste item */
-	main section:nth-of-type(2) li:first-of-type article:first-of-type img {
-		width: 100%;
-		height: auto;
-		max-width: 100%;
 	}
 }
 
@@ -721,30 +693,6 @@ main section:nth-of-type(4)>a:last-of-type:active {
 		font-size: 1.13rem;
 	}
 
-	/* SECTION 2 */
-	main section:nth-of-type(2) ul {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
-		grid-column-gap: 3rem;
-	}
-
-	main section:nth-of-type(2) li:first-of-type {
-		grid-row: 1 / 4;
-	}
-
-	/* Image styling overschrijving eerste item */
-	main section:nth-of-type(2) li:first-of-type article:first-of-type img {
-		width: 36.6rem;
-		height: 20.6rem;
-		justify-self: start;
-	}
-
-	/* More news button */
-	main section:nth-of-type(2) ul li:last-of-type {
-		grid-column-start: 2;
-		justify-self: end;
-	}
-
 	/* SECTION 3 */
 
 	/* Grid verdeling gehele section */
@@ -777,6 +725,17 @@ main section:nth-of-type(4)>a:last-of-type:active {
 		padding: 1rem;
 	}
 
+	main section:nth-of-type(2)>ul {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-column-gap: 3rem;
+		grid-row-gap: 0;
+	}
+
+	main section:nth-of-type(2) li:first-of-type {
+		grid-row: 1 / 4;
+	}
+
 	/* H3 styling alle items */
 	main section:nth-of-type(2) article h3 {
 		grid-column-start: 2;
@@ -793,6 +752,8 @@ main section:nth-of-type(4)>a:last-of-type:active {
 
 	/* Image styling alle items */
 	main section:nth-of-type(2) article img {
+		width: 10rem;
+		height: 5.63rem;	
 		justify-self: start;
 		grid-row: 1 / 3;
 	}
@@ -805,12 +766,14 @@ main section:nth-of-type(4)>a:last-of-type:active {
 
 	/* Gridverdeling overschrijving eerste item */
 	main section:nth-of-type(2) li:first-of-type article {
-		grid-template-rows: auto .5fr .25fr .45fr;
+		grid-template-rows: 1fr .5fr .25fr .45fr;
 	}
 
 	/* H3 overschrijving eerste item */
 	main section:nth-of-type(2) li:first-of-type article:first-of-type h3 {
+		font-size: 1.4rem;
 		grid-row-start: 3;
+		grid-column-start: 1;
 		max-width: 37ch;
 	}
 
@@ -820,6 +783,14 @@ main section:nth-of-type(4)>a:last-of-type:active {
 		max-width: 50ch;
 		grid-column-start: 1;
 		align-self: center;
+	}
+
+	/* Image styling overschrijving eerste item */
+	main section:nth-of-type(2) li:first-of-type article:first-of-type img {
+		width: 36.6rem;
+		height: 20.6rem;
+		justify-self: start;
+		max-width: none;
 	}
 
 	/* Datum overschrijving eerste item */
